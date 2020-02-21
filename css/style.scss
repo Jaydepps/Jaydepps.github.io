@@ -94,15 +94,28 @@
 }
 
 .second{
-  background-color: #2F2F2F;
+  background-color: #DCDCDC;
   color: whitesmoke;
+  padding: 20px 0px;
+  flex-direction: column;
+  #skill-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #skill-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-// .sep{
-//   height: 1vh;
-//   background-color: white;
-// }
+
 .third{
   background-color: #626262;
+}
+
+.skill-img{
+  width: 15%;
 }
 
 .footer{
