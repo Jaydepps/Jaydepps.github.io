@@ -11,14 +11,33 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $(window).scroll(function() {
+            if ($(document).scrollTop() > ($(".first").outerHeight() - 65)) {
+              $("#skillsb").addClass("test");
+              if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - 65)) {
+                $("#skillsb").removeClass("test");
+                $("#projectsb").addClass("test");
+              } else {
+                $("#projectsb").removeClass("test");
+                $("#skillsb").addClass("test");
+              }
+            } else {
+              $("#skillsb").removeClass("test");
+            }
+          });
+        });
+    </script>
 </head>
 <body>
-    <div id="menu">
+    <div class="menu">
         <ul>
-            <li><a href="#skills">Skills</a></li>
-            <li><a>Projects</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#skills" id="skillsb">Skills</a></li>
+            <li><a href="#" id="projectsb">Projects</a></li>
+            <li><a href="#" id="aboutb">About</a></li>
+            <li><a href="#" id="contactb">Contact</a></li>
         </ul>
     </div>
     <div class="div first">
