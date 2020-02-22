@@ -61,10 +61,11 @@ a.anchor{
         justify-content: center;
         align-items: center;
       }
-    }
-    li:hover{
-      background-color: rgba($color: #686868, $alpha: 0.9);
-    }
+      a:hover{
+        background-color: rgba($color: #4E4E4E, $alpha: 0.9);
+      }
+      
+      }
   }
 }
 .first{
@@ -95,7 +96,7 @@ a.anchor{
         position: relative;
         color: white;
         font-size: 3em;
-        letter-spacing: .3em;
+        letter-spacing: .25em;
     }
     h2{
         letter-spacing: .2em;
@@ -169,6 +170,9 @@ a.anchor{
 
 .third{
   background-color: #626262;
+  img{
+    width: 100%;
+  }
 }
 
 .skill-img{
@@ -177,8 +181,7 @@ a.anchor{
 }
 
 .test{
-  background-color: blue;
-  border-bottom: white solid 2px;
+  background-color: rgba($color: #686868, $alpha: 0.9);
 }
 
 .footer{

@@ -15,11 +15,25 @@
     <script>
         $(document).ready(function() {
           $(window).scroll(function() {
-            if ($(document).scrollTop() > ($(".first").outerHeight() - 65)) {
+            if ($(document).scrollTop() > ($(".first").outerHeight() - $(window).height() / 100*30)) {
               $("#skillsb").addClass("test");
-              if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - 65)) {
+              if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
                 $("#skillsb").removeClass("test");
                 $("#projectsb").addClass("test");
+                if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
+                  $("#skillsb").removeClass("test");
+                  $("#projectsb").addClass("test");
+                  if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
+                    $("#skillsb").removeClass("test");
+                    $("#projectsb").addClass("test");
+                  } else {
+                    $("#projectsb").removeClass("test");
+                    $("#skillsb").addClass("test");
+                  }
+                } else {
+                  $("#projectsb").removeClass("test");
+                  $("#skillsb").addClass("test");
+                }
               } else {
                 $("#projectsb").removeClass("test");
                 $("#skillsb").addClass("test");
@@ -66,7 +80,8 @@
         </div>
     </div>
     <div class="div third">
-
+      <h1>Projects</h1>
+      <img src="img/proj1.png" alt="project1">
     </div>
 
     <div class="div footer">
