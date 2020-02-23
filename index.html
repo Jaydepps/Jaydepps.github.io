@@ -20,19 +20,19 @@
               if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
                 $("#skillsb").removeClass("test");
                 $("#projectsb").addClass("test");
-                if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
-                  $("#skillsb").removeClass("test");
-                  $("#projectsb").addClass("test");
-                  if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
-                    $("#skillsb").removeClass("test");
-                    $("#projectsb").addClass("test");
-                  } else {
-                    $("#projectsb").removeClass("test");
-                    $("#skillsb").addClass("test");
-                  }
-                } else {
+                if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() + $(".third").outerHeight() - $(window).height() / 100*30)) {
                   $("#projectsb").removeClass("test");
-                  $("#skillsb").addClass("test");
+                  $("#aboutb").addClass("test");
+                  // if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
+                  //   $("#skillsb").removeClass("test");
+                  //   $("#projectsb").addClass("test");
+                  // } else {
+                  //   $("#projectsb").removeClass("test");
+                  //   $("#skillsb").addClass("test");
+                  // }
+                } else {
+                  $("#aboutb").removeClass("test");
+                  $("#projectsb").addClass("test");
                 }
               } else {
                 $("#projectsb").removeClass("test");
@@ -49,7 +49,7 @@
     <div class="menu">
         <ul>
             <li><a href="#skills" id="skillsb">Skills</a></li>
-            <li><a href="#" id="projectsb">Projects</a></li>
+            <li><a href="#projects" id="projectsb">Projects</a></li>
             <li><a href="#" id="aboutb">About</a></li>
             <li><a href="#" id="contactb">Contact</a></li>
         </ul>
@@ -70,20 +70,67 @@
             <h1>Skills</h1>
         </div>
         <div id="skill-set">
-            <img class="skill-img" src="img/html5.png" alt="html5">
-            <img class="skill-img" src="img/css3.png" alt="css3">
-            <img class="skill-img" src="img/js.png" alt="javascript">
-            <img class="skill-img" src="img/bootstrap.png" alt="bootstrap">
-            <img class="skill-img" src="img/jquery.png" alt="jquery">
-            <img class="skill-img" src="img/node.png" alt="nodejs">
-            <img class="skill-img" src="img/php.png" alt="php">
+            <img src="img/html5.png" alt="html5">
+            <img src="img/css3.png" alt="css3">
+            <img src="img/js.png" alt="javascript">
+            <img src="img/bootstrap.png" alt="bootstrap">
+            <img src="img/jquery.png" alt="jquery">
+            <img src="img/node.png" alt="nodejs">
+            <img src="img/php.png" alt="php">
         </div>
     </div>
     <div class="div third">
-      <h1>Projects</h1>
-      <img src="img/proj1.png" alt="project1">
+      <div id="projects-title">
+        <a class="anchor" id="projects"></a>
+        <h1>Projects</h1>
+      </div>
+      <div id="projects-set">
+        <div class="project-img">
+          <img src="img/proj1.png" alt="project1">
+          <div class="project-text">
+            <p>Signature Contracting is a unique company offering customers in Hamilton and the surrounding area a full service renovation solution.</p>
+            <a href="#">Check it out!</a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="img/proj2.png" alt="project2">
+          <div class="project-text">
+            <p>Founded in 1996, the original Bliss NYC ignited a modern spa and skin revolution with ingenious products, a super-positive, never-fussy vibe.</p>
+            <a href="#">Check it out!</a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="img/proj3.png" alt="project3">
+          <div class="project-text">
+            <p>Award winning health institution based in Colorado. With more that 21,000 mission-centered professionals they seek to help everyone ill or in need of nurturing.</p>
+            <a href="#">Check it out!</a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="img/proj4.png" alt="project4">
+          <div class="project-text">
+            <p>Advanced Dynamics is a management owned company that focuses on engineering, designing and manufacturing of custom heavy duty material handling systems.</p>
+            <a href="#">Check it out!</a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="img/proj5.png" alt="project5">
+          <div class="project-text">
+            <p>People are at their best when they create. The name 53 originates from the distance in centimeters that connects head, heart and hand-the personal canvas for creation.</p>
+            <a href="#">Check it out!</a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="img/proj6.png" alt="project6">
+          <div class="project-text">
+            <p>Multidisciplinary company with a detail-oriented mentality that operates in the fields of design, business, development and technology.</p>
+            <a href="#">Check it out!</a>
+          </div>
+        </div>
+      </div>
     </div>
-
+    <div class="div fourth">
+    </div>
     <div class="div footer">
         <h1>&copy; 2020 Nikola Stojkovic</h1>
     </div>
