@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 
+$grey1: #fafafa;
+$grey2: #f5f5f5;
+$grey3: #eeeeee;
+$grey4: #e0e0e0;
+$grey5: #bdbdbd;
+$grey6: #9e9e9e;
+$grey7: #757575;
+$grey8: #616161;
+$grey9: #424242;
+$grey10: #212121;
+
 html{
-  
   scroll-behavior: smooth;
 }
 *{
@@ -20,6 +30,10 @@ ul{
 
 h1{
   font-size: 2.2em;
+}
+
+.test{
+  background-color: rgba($color: #686868, $alpha: 0.9);
 }
 
 .div{
@@ -52,7 +66,6 @@ a.anchor{
     width: 50%;
     display: flex;
     justify-content: space-between;
-
     li{
       width: 25%;
       height: 100%;
@@ -63,12 +76,13 @@ a.anchor{
         display: flex;
         justify-content: center;
         align-items: center;
+        color: $grey2;
       }
       a:hover{
         background-color: rgba($color: #4E4E4E, $alpha: 0.9);
+        transition: all 0.15s ease;
       }
-      
-      }
+    }
   }
 }
 .first{
@@ -78,6 +92,7 @@ a.anchor{
     padding-top: 14%;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
 }
 
 #laptop{
@@ -90,11 +105,13 @@ a.anchor{
     bottom: 0px;
     left: -11%;
     height: 100%;
+    overflow: hidden;
 }
 
 #holder{
     z-index: 10;
     text-align: end;
+    padding: 7em;
     h1{
         position: relative;
         color: white;
@@ -116,8 +133,8 @@ a.anchor{
     width: 100%;
     height: 100%;
 }
-
-.glitch:hover {
+#holder:hover{
+  .glitch {
 	&::before{
 		@include glitchCopy;
 		left: 2px;
@@ -125,15 +142,17 @@ a.anchor{
     text-shadow: -2px 0 #000;
 		clip: rect(44px, 450px, 56px, 0);
 		animation: glitch-anim 5s infinite linear alternate-reverse;
-	}
+	  }
 	&::after {
 		@include glitchCopy;
 		left: -2px;
     // text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
     text-shadow: -2px 0 #fff, 2px 2px #000;
 		animation: glitch-anim2 1s infinite linear alternate-reverse;
-	}
+	  }
+  }
 }
+
 @keyframes glitch-anim {
   $steps: 20;
   @for $i from 0 through $steps {
@@ -153,45 +172,47 @@ a.anchor{
   }
 }
 
+@mixin title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+@mixin set{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .second{
-  background-color: #DCDCDC;
-  color: #151515;
+  background-color: $grey9;
+  color: $grey4;
   padding: 20px;
   flex-direction: column;
   box-sizing: border-box;
   #skill-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+    @include title();
   }
   #skill-set{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include set();
     img{
       width: 12%;
       margin: 10px 3%;
     }
   }
 }
-
 .third{
-  background-color: #626262;
+  background-color: $grey8;
   flex-direction: column;
   padding: 20px 20px 0px 20px;
   #projects-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+    @include title();
+    color: $grey3;
   }
   #projects-set{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include set();
     width: 100%;
     .project-img{
       width: 27%;
@@ -236,9 +257,9 @@ a.anchor{
 
 .project-img:hover{
   .project-text{
-    background-color: rgba($color: #151515, $alpha: 0.9) !important;
+    background-color: rgba($color: $grey10, $alpha: 0.9) !important;
     a{
-      background-color: #2F2F2F !important;
+      background-color: $grey10 !important;
       border: rgba($color: #007ACD, $alpha: 1.0) solid 3px !important;
     }
     p{
@@ -250,8 +271,18 @@ a.anchor{
   }
 }
 
-.test{
-  background-color: rgba($color: #686868, $alpha: 0.9);
+.fourth{
+  flex-direction: column;
+  background-color: $grey7;
+  padding: 20px;
+  #about-title{
+    @include title();
+    color: $grey2;
+  }
+  #about-set{
+    @include set();
+    font-size: 1.5em;
+  }
 }
 
 .footer{
