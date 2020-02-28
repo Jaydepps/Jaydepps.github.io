@@ -17,13 +17,13 @@
           $(window).scroll(function() {
             if ($(document).scrollTop() > ($(".first").outerHeight() - $(window).height() / 100*30)) {
               $("#skillsb").addClass("test");
-              if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
+              if ($(document).scrollTop() > ($(".first").outerHeight() + $(".skills").outerHeight() - $(window).height() / 100*30)) {
                 $("#skillsb").removeClass("test");
                 $("#projectsb").addClass("test");
-                if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() + $(".third").outerHeight() - $(window).height() / 100*30)) {
+                if ($(document).scrollTop() > ($(".first").outerHeight() + $(".skills").outerHeight() + $(".projects").outerHeight() - $(window).height() / 100*30)) {
                   $("#projectsb").removeClass("test");
                   $("#aboutb").addClass("test");
-                  // if ($(document).scrollTop() > ($(".first").outerHeight() + $(".second").outerHeight() - $(window).height() / 100*30)) {
+                  // if ($(document).scrollTop() > ($(".first").outerHeight() + $(".skills").outerHeight() - $(window).height() / 100*30)) {
                   //   $("#skillsb").removeClass("test");
                   //   $("#projectsb").addClass("test");
                   // } else {
@@ -50,8 +50,8 @@
         <ul>
             <li><a href="#skills" id="skillsb">Skills</a></li>
             <li><a href="#projects" id="projectsb">Projects</a></li>
-            <li><a href="#" id="aboutb">About</a></li>
-            <li><a href="#" id="contactb">Contact</a></li>
+            <li><a href="#about" id="aboutb">About</a></li>
+            <li><a href="#contact" id="contactb">Contact</a></li>
         </ul>
     </div>
     <div class="div first">
@@ -64,7 +64,7 @@
         </div>
     </div>
     
-    <div class="div second">
+    <div class="div skills">
         <div id="skill-title">
             <a class="anchor" id="skills"></a>
             <h1>Skills</h1>
@@ -79,7 +79,7 @@
             <img src="img/php.png" alt="php">
         </div>
     </div>
-    <div class="div third">
+    <div class="div projects">
       <div id="projects-title">
         <a class="anchor" id="projects"></a>
         <h1>Projects</h1>
@@ -129,13 +129,14 @@
         </div>
       </div>
     </div>
-    <div class="div fourth">
+    <div class="div about">
       <div id="about-title">
+        <a class="anchor" id="about"></a>
         <h1>About</h1>
       </div>
       <div id="about-set">
         <div id="about-pic">
-          <img src="" alt="">
+          <img src="img/pepelaugh.png" alt="profile">
         </div>
         <div id="about-text">
           <p>I'm Nikola, 20 years old passionate web designer based in Belgrade. Currently studying at ICT school of vocational studies.</p>
