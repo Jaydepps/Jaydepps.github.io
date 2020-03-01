@@ -10,6 +10,7 @@ $grey7: #757575;
 $grey8: #616161;
 $grey9: #424242;
 $grey10: #212121;
+$accent: #007ACD;
 
 html{
   scroll-behavior: smooth;
@@ -33,17 +34,11 @@ h1{
   font-weight: 600;
 }
 
+h2{
+  font-weight: 400;
+}
 .test{
   background-color: rgba($color: #686868, $alpha: 0.9);
-}
-
-.div{
-    width: 100%;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 a.anchor{
@@ -53,7 +48,7 @@ a.anchor{
   visibility: hidden;
 }
 
-.menu{
+#menu{
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
@@ -63,6 +58,7 @@ a.anchor{
   height: 60px;
   z-index: 100;
   background-color: rgba($color: #151515, $alpha: 0.7);
+  justify-content: space-between;
   ul{
     width: 50%;
     display: flex;
@@ -86,7 +82,7 @@ a.anchor{
     }
   }
 }
-.first{
+#first{
     height: 100vh;
     background-color: #151515;
     padding-left: 50%;
@@ -94,6 +90,10 @@ a.anchor{
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #laptop{
@@ -188,8 +188,12 @@ a.anchor{
 }
 
 .skills{
-  background-color: $grey9;
-  color: $grey4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey1;
+  color: $grey9;
   padding: 0px 5%;
   flex-direction: column;
   box-sizing: border-box;
@@ -207,25 +211,33 @@ a.anchor{
   }
 }
 
-#skill-set img:hover{
-  filter: grayscale(0%);
+.skills:hover{
+  #skill-set img{
+    filter: grayscale(0%);
+  }
 }
 
 .projects{
-  background-color: $grey8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eceff1;
   flex-direction: column;
   padding: 0px 5%;
   #projects-title{
     @include title();
+    color: $grey10;
   }
   #projects-set{
     @include set();
     width: 100%;
     .project-img{
-      width: 27%;
+      width: 30%;
       margin: 0px 1% 2% 1%;
       position: relative;
       overflow: hidden;
+      border: $grey6 solid 1px;
       img{
         width: 100%;
         display: block;
@@ -238,7 +250,7 @@ a.anchor{
         justify-content: flex-start;
         align-items: center;
         position: absolute;
-        background-color: rgba($color: $grey10, $alpha: 0.3);
+        background-color: rgba($color: $grey10, $alpha: 0.2);
         top: 0px;
         bottom: 0px;
         left: 0px;
@@ -246,6 +258,7 @@ a.anchor{
         transition: all .3s ease-in-out;
         p{
           font-size: 19px;
+          color: $grey1;
           opacity: 0;
           transition: all .3s ease-in-out;
           padding: 5%;
@@ -255,11 +268,13 @@ a.anchor{
           display: block;
           position: absolute;
           font-weight: 600;
-          padding: 3%;
+          font-size: 1.1em;
+          padding: 2.5%;
           bottom: 5%;
-          background-color: rgba($color: #007ACD, $alpha: 0.9);
+          background-color: rgba($color: $grey1, $alpha: 0.7);
           transition: all .3s ease-in-out;
-          border: rgba($color: #007ACD, $alpha: 0.0) solid;
+          border: rgba($color: $accent, $alpha: 0.9) solid 0.25em;
+          color: $grey10;
         }
       }
     }
@@ -270,8 +285,8 @@ a.anchor{
   .project-text{
     background-color: rgba($color: $grey10, $alpha: 0.7) !important;
     a{
-      background-color: $grey10 !important;
-      border: rgba($color: #007ACD, $alpha: 1.0) solid 3px !important;
+      background-color: $accent !important;
+      color: $grey1 !important;
     }
     p{
       opacity: 1 !important;
@@ -279,38 +294,182 @@ a.anchor{
   }
   img{
     transform: scale(1.05);
+    filter: blur(1000px) !important;
+    -webkit-filter: blur(1000px) !important;
+  }
+}
+
+#pa:hover{
+  .project-img img{
     filter: grayscale(0%) !important;
   }
 }
 
 .about{
-  flex-direction: column;
-  background-color: $grey7;
-  padding: 0px 3%;
-  #about-title{
-    @include title();
-    color: $grey2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include set();
+  background-color: #eceff1;
+  padding: 2% 10%;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: $grey9;
+  #about-pic{
+    img{
+      border: $grey9 solid 7px;
+      margin-bottom: 7%;
+    }
   }
-  #about-set{
+  #about-text{
+    #about-title{
+      @include title();
+      h1{
+        font-size: 1.8em;
+      };
+    }
+    font-size: 1.5em;
+    width: 65%;
+    text-align: center;
+  }
+}
+
+.contact{
+  background-color: $grey9;
+  color: $grey2;
+  @include set();
+  flex-direction: column;
+  #contact-title{
+    @include title();
+  }
+  #contact-set{
     @include set();
+    width: 100%;
+    padding: 1% 7%;
     justify-content: space-around;
-    #about-pic{
-      img{
-        border: $grey9 solid 7px;
-        margin-bottom: 7%;
+    #contact-left {
+      @include set();
+      width: 40%;
+      justify-content: space-around;
+      #contact-list{
+        margin-top: 2em;
+        width: 100%;
+        ul{
+          width: 100%;
+          @include set();
+          li{
+            display: inline-block;
+            font-size: 2em;
+            a{
+              padding: 0.4em;
+              transition: all 0.2s ease;
+            }
+          }
+        }
       }
     }
-    #about-text{
-      font-size: 1.5em;
-      width: 65%;
-      text-align: center;
+    #contact-right{
+      @include set();
+      flex-direction: column;
+      width: 40%;
+      #form{
+        margin-top: 2em;
+        @include set();
+        width: 100%;
+        flex-direction: column;
+        #nameid{
+          display: block;
+          background-color: $grey9;
+          width: 100%;
+          height: 3em;
+          padding: 0.5em;
+          color: $grey1;
+          border: $grey6 solid;
+          border-width: 2px 2px 0px 2px;
+          &::placeholder{
+            color: $grey6;
+            opacity: 1;
+          }
+          &:focus{
+            outline: none;
+            border-color: $accent;
+            border-width: 2px 2px 2px 2px;
+            & + #emailid{
+              border-width: 0px 2px 0px 2px;
+            }
+          }
+        }
+        #emailid{
+          display: block;
+          background-color: $grey9;
+          width: 100%;
+          height: 3em;
+          padding: 0.5em;
+          color: $grey1;
+          border: $grey6 solid;
+          border-width: 2px 2px 0px 2px;
+          &::placeholder{
+            color: $grey6;
+            opacity: 1;
+          }
+          &:focus{
+            outline: none;
+            border-color: $accent;
+            border-width: 2px 2px 2px 2px;
+            & + #messageid{
+              border-width: 0px 2px 0px 2px;
+            }
+          }
+        }
+        #messageid{
+          display: block;
+          background-color: $grey9;
+          width: 100%;
+          height: 10em;
+          resize: none;
+          padding: 0.5em;
+          color: $grey1;
+          border: $grey6 solid;
+          border-width: 2px 2px 0px 2px;
+          &::placeholder{
+            color: $grey6;
+            opacity: 1;
+          }
+          &:focus{
+            outline: none;
+            border-color: $accent;
+            border-width: 2px 2px 2px 2px;
+            & + #submitid{
+              border-width: 0px 2px 2px 2px;
+            }
+          }
+        }
+        #submitid{
+          display: block;
+          background-color: $grey9;
+          width: 100%;
+          height: 3em;
+          color: $grey1;
+          border: $grey6 solid;
+          border-width: 2px 2px 2px 2px;
+          &:hover{
+            background-color: $accent;
+            border-color: $accent;
+          }
+        }
+      }
     }
   }
 }
 
+#contact-list a:hover{
+  color: $accent;
+}
 .footer{
-    height: 600vh;
-    color: #a9a9a9;
-    background-color: #494949;
-    font-size: 6px;
+  @include set();
+  height: 8vh;
+  color: #a9a9a9;
+  background-color: $grey9;
+  font-size: 6px;
 }
