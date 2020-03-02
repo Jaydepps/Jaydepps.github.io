@@ -342,6 +342,7 @@ a.anchor{
   flex-direction: column;
   #contact-title{
     @include title();
+    margin-top: 3em;
   }
   #contact-set{
     @include set();

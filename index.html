@@ -24,13 +24,13 @@
                 if ($(document).scrollTop() > ($("#first").outerHeight() + $(".skills").outerHeight() + $(".projects").outerHeight() - $(window).height() / 100*30)) {
                   $("#projectsb").removeClass("test");
                   $("#aboutb").addClass("test");
-                  // if ($(document).scrollTop() > ($("#first").outerHeight() + $(".skills").outerHeight() - $(window).height() / 100*30)) {
-                  //   $("#skillsb").removeClass("test");
-                  //   $("#projectsb").addClass("test");
-                  // } else {
-                  //   $("#projectsb").removeClass("test");
-                  //   $("#skillsb").addClass("test");
-                  // }
+                  if ($(document).scrollTop() > ($("#first").outerHeight() + $(".skills").outerHeight() + $(".projects").outerHeight() + $(".about").outerHeight() - $(window).height() / 100*30)) {
+                    $("#aboutb").removeClass("test");
+                    $("#contactb").addClass("test");
+                  } else {
+                    $("#contactb").removeClass("test");
+                    $("#aboutb").addClass("test");
+                  }
                 } else {
                   $("#aboutb").removeClass("test");
                   $("#projectsb").addClass("test");
@@ -57,7 +57,7 @@
     </div>
     <div id="first">
         <div id="laptop">
-            <img onload="this.style.opacity='1'" src="img/back-1.jpg" alt="img">
+            <img onload="this.style.opacity='1'" src="img/back-1.png" alt="img">
         </div>
         <div id="holder">
             <h1 class="glitch" data-text="Nikola Stojkovic">Nikola Stojkovic</h1>
@@ -146,6 +146,7 @@
     </div>
     <div class="contact">
       <div id="contact-title">
+        <a class="anchor" id="contact"></a>
         <h1>Interested in working together?</h1>
       </div>
       <div id="contact-set">
