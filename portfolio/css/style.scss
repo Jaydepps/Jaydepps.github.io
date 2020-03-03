@@ -59,6 +59,7 @@ a.anchor{
   z-index: 100;
   background-color: rgba($color: #151515, $alpha: 0.7);
   justify-content: space-between;
+  backdrop-filter: blur(3px);
   ul{
     width: 50%;
     display: flex;
@@ -125,7 +126,6 @@ a.anchor{
       transition: all 0.2s ease;
       display: none;
       &:hover{
-        background-color: $accent;
         color: white;
       }
     }
@@ -511,14 +511,6 @@ a.anchor{
   }
   .projects #projects-set .project-img{
     width: 98%;
-    .project-text{
-      a{
-        font-size: 1.3em;
-      }
-      p{
-        font-size: 1.2em;
-      }
-    }
   }
   .contact #contact-set{
     flex-direction: column;
