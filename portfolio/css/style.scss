@@ -325,7 +325,9 @@ a.anchor{
     img{
       border: $grey9 solid 7px;
       margin-bottom: 7%;
+      width: 100%;
     }
+    width: 30%;
   }
   #about-text{
     #about-title{
@@ -511,6 +513,9 @@ a.anchor{
   }
   .projects #projects-set .project-img{
     width: 98%;
+  }
+  .about #about-pic{
+    width: 50%;
   }
   .contact #contact-set{
     flex-direction: column;
