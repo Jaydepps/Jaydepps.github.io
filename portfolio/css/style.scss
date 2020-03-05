@@ -261,13 +261,17 @@ a.anchor{
         left: 0px;
         right: 0px;
         transition: all .3s ease-in-out;
+        padding: 5%;
         p{
           font-size: 1em;
           color: $grey1;
           opacity: 0;
           transition: all .3s ease-in-out;
-          padding: 5%;
           text-align: center;
+          margin: 0.3em;
+        }
+        p:first-of-type{
+          font-weight: 600;
         }
         a{
           display: block;
@@ -312,26 +316,23 @@ a.anchor{
 
 .about{
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   @include set();
   background-color: #eceff1;
-  padding: 2% 10%;
+  padding: 0% 10%;
   justify-content: space-around;
-  align-items: flex-start;
   color: $grey9;
   #about-pic{
     img{
       border: $grey9 solid 7px;
-      margin-bottom: 7%;
       width: 100%;
     }
     width: 30%;
+    margin: 1em 0em;
   }
   #about-text{
     #about-title{
       @include title();
+      margin-top: 0px;
       h1{
         font-size: 1.8em;
       };
@@ -351,7 +352,6 @@ a.anchor{
   padding: 0px 7%;
   #contact-title{
     @include title();
-    margin-top: 3em;
     text-align: center;
   }
   #contact-set{
@@ -361,7 +361,7 @@ a.anchor{
     justify-content: space-around;
     #contact-left {
       @include set();
-      width: 40%;
+      width: 50%;
       justify-content: space-around;
       #contact-list{
         margin-top: 2em;
@@ -384,6 +384,7 @@ a.anchor{
       @include set();
       flex-direction: column;
       width: 40%;
+      transition: all 0.3s ease;
       #form{
         margin-top: 2em;
         @include set();
@@ -391,6 +392,7 @@ a.anchor{
         flex-direction: column;
         #nameid{
           display: block;
+          position: relative;
           background-color: $grey9;
           width: 100%;
           height: 3em;
@@ -400,15 +402,10 @@ a.anchor{
           border-width: 2px 2px 0px 2px;
           &::placeholder{
             color: $grey6;
-            opacity: 1;
+            opacity: 0.8;
           }
           &:focus{
             outline: none;
-            border-color: $accent;
-            border-width: 2px 2px 2px 2px;
-            & + #emailid{
-              border-width: 0px 2px 0px 2px;
-            }
           }
         }
         #emailid{
@@ -422,15 +419,10 @@ a.anchor{
           border-width: 2px 2px 0px 2px;
           &::placeholder{
             color: $grey6;
-            opacity: 1;
+            opacity: 0.8;
           }
           &:focus{
             outline: none;
-            border-color: $accent;
-            border-width: 2px 2px 2px 2px;
-            & + #messageid{
-              border-width: 0px 2px 0px 2px;
-            }
           }
         }
         #messageid{
@@ -445,15 +437,10 @@ a.anchor{
           border-width: 2px 2px 0px 2px;
           &::placeholder{
             color: $grey6;
-            opacity: 1;
+            opacity: 0.8;
           }
           &:focus{
             outline: none;
-            border-color: $accent;
-            border-width: 2px 2px 2px 2px;
-            & + #submitid{
-              border-width: 0px 2px 2px 2px;
-            }
           }
         }
         #submitid{
@@ -464,6 +451,7 @@ a.anchor{
           color: $grey1;
           border: $grey6 solid;
           border-width: 2px 2px 2px 2px;
+          transition: all 0.2s ease;
           &:hover{
             background-color: $accent;
             border-color: $accent;
@@ -517,6 +505,10 @@ a.anchor{
   .about #about-pic{
     width: 50%;
   }
+  .about #about-text{
+    width: 100%;
+    margin-bottom: 1em;
+  }
   .contact #contact-set{
     flex-direction: column;
     #contact-left{
@@ -535,5 +527,8 @@ a.anchor{
   }
   .skills #skill-set img{
     width: 40%;
+  }
+  .about #about-pic{
+    width: 70%;
   }
 }
