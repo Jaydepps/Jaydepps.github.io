@@ -274,3 +274,120 @@ textarea{
         border-color: #28a745 !important;
     }
 }
+.icon{
+    position: relative;
+    top: 0.3rem;
+    margin: 0rem 0.2rem 0rem 0.2rem;
+}
+body .nohover-bglight{
+    &:hover{
+        background-color: #f8f9fa !important;
+    }
+}
+.transition{
+    transition: 0.2s all ease-in-out;
+}
+
+@media screen and (max-width:767px){
+    h1, .h1{
+        font-size: 1.2rem;
+    }
+      
+    h2, .h2{
+        font-size: 1.1rem;
+    }
+      
+    h3, .h3{
+        font-size: 1.05rem;
+    }
+      
+    h4, .h4{
+        font-size: 1rem;
+    }
+      
+    h5, .h5{
+        font-size: 0.95rem;
+    }
+      
+    h6, .h6, p, a, li{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    h1, .h1{
+        font-size: 1.5rem;
+    }
+      
+    h2, .h2{
+        font-size: 1.2rem;
+    }
+      
+    h3, .h3{
+        font-size: 1.15rem;
+    }
+      
+    h4, .h4{
+        font-size: 1.1rem;
+    }
+      
+    h5, .h5{
+        font-size: 1.05rem;
+    }
+      
+    h6, .h6, p, a, li{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    h1, .h1{
+        font-size: 2rem;
+    }
+      
+    h2, .h2{
+        font-size: 1.6rem;
+    }
+      
+    h3, .h3{
+        font-size: 1.45rem;
+    }
+      
+    h4, .h4{
+        font-size: 1.3rem;
+    }
+      
+    h5, .h5{
+        font-size: 1.15rem;
+    }
+      
+    h6, .h6, p, a, li{
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    h1, .h1{
+        font-size: 2.5rem;
+    }
+      
+    h2, .h2{
+        font-size: 2rem;
+    }
+      
+    h3, .h3{
+        font-size: 1.75rem;
+    }
+      
+    h4, .h4{
+        font-size: 1.5rem;
+    }
+      
+    h5, .h5{
+        font-size: 1.25rem;
+    }
+      
+    h6, .h6, p, a, li{
+        font-size: 1rem;
+    }
+}
