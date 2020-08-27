@@ -145,6 +145,14 @@ a:hover {
   background-clip: content-box;
 }
 
+#cimg-10 {
+  background-image: url(../img/author-back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
 .text-gray {
   color: #757575 !important;
 }
@@ -373,6 +381,29 @@ body .nohover-bglight:hover {
   transition: 0.2s all ease-in-out;
 }
 
+.back-img {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: opacity(20%) blur(2px);
+          filter: opacity(20%) blur(2px);
+}
+
+.front-text {
+  z-index: 5;
+}
+
+.bg-light-transparent {
+  background-color: rgba(248, 249, 250, 0.6);
+}
+
+.bg-light-transparent:hover {
+  background-color: rgba(218, 224, 229, 0.7);
+}
+
 @media screen and (max-width: 767px) {
   h1, .h1 {
     font-size: 1.2rem;
@@ -391,6 +422,9 @@ body .nohover-bglight:hover {
   }
   h6, .h6, p, a, li {
     font-size: 0.9rem;
+  }
+  .icon {
+    top: 0.125rem;
   }
 }
 
@@ -413,6 +447,9 @@ body .nohover-bglight:hover {
   h6, .h6, p, a, li {
     font-size: 0.9rem;
   }
+  .icon {
+    top: 0.05rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -433,6 +470,9 @@ body .nohover-bglight:hover {
   }
   h6, .h6, p, a, li {
     font-size: 0.95rem;
+  }
+  .icon {
+    top: 0.25rem;
   }
 }
 
@@ -455,5 +495,28 @@ body .nohover-bglight:hover {
   h6, .h6, p, a, li {
     font-size: 1rem;
   }
+  .icon {
+    top: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .md-img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: opacity(30%) blur(2px);
+            filter: opacity(30%) blur(2px);
+  }
+  .md-text {
+    z-index: 5;
+  }
+}
+
+.d-table {
+  border-collapse: collapse;
 }
 /*# sourceMappingURL=style.css.map */
