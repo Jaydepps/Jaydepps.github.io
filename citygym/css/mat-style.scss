@@ -211,9 +211,11 @@ a:hover{
 }
 .footer-link{
     color: #bdbdbd;
+    border-bottom: dashed #28a745 1px;
     transition: all 0.5s;
     &:hover{
-        color: #28a745;
+        color: #28A745;
+        border-color: #bdbdbd;
     }
 }
 .m-divider{
@@ -296,9 +298,6 @@ textarea{
 }
 .m-border-none{
     border: none;
-    &:focus{
-        background-color: #1e7e34;
-    }
 }
 .m-w-100{
     width: 100%;
@@ -308,6 +307,9 @@ textarea{
 }
 .m-bg-white{
     background-color: #fff;
+    &:focus{
+        background-color: #fff;
+    }
 }
 .h-100{
     height: 100%;
@@ -642,8 +644,78 @@ body ul li a:hover{
     height: auto;
 }
 .m-d-inline-block{
-    display: inline-block;
+    display: inline-block !important;
 }
 .m-shadow {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.vh50 {
+    height: 50vh;
+}
+.collapse:not(.show) {
+    display: none;
+}
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(0, 0, 0, 0.7);
+}
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, 0.9);
+}
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav-link:hover, .nav-link:focus {
+    text-decoration: none;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 767.98px){
+    .show-big{
+        display: none;
+    }
+    .m-768-6 {
+      width: 50% !important;
+      margin-left: 0 !important;
+    }
+    .m-768-8 {
+      width: 66.6% !important;
+      margin-left: 0 !important;
+    }
+}
+@media screen and (min-width: 768px){
+    .show-small{
+        display: none;
+    }
 }

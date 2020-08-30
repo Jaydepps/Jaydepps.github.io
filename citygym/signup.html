@@ -22,52 +22,69 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <nav class="m-d-flex m-bg-white m-justify-content-center row py-2 px-3 m-0 h-auto m-shadow pinned above-1000">
-    <div class="nav-wrapper col s9 m-d-flex m-justify-content-between m-align-items-center m-margin-left-0">
+  <nav class="m-d-flex m-bg-white m-align-items-center m-flex-column row py-2 px-3 m-0 h-auto m-shadow pinned above-1000">
+    <div class="nav-wrapper col s12 xl9 m-d-flex m-justify-content-between m-align-items-center mx-0 px-0">
       <a href="index.html" class="m-d-flex nav-brand"><img class="m-d-inline-block" height="60" src="img/logo.png" alt=""></a>
       <div id="menu" class="m-d-flex">
-          <ul class="m-list-unstyled m-d-flex navbar-nav m-align-items-center mr-4">
-            <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="about.html">About</a></li>
-            <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="training.html">Personal training</a></li>
-            <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="rulebook.html">Rule book</a></li>
-            <li class="m-float"><a class="m-nav-color m-d-block px-3 py-2 mx-2 m-rounded-pill bg-success white-text" href="signup.html"><strong>Make an appointment</strong></a></li>
-          </ul>
-          <ul class="m-list-unstyled m-d-flex m-align-items-center m-0 p-0">
-            <li class="mr-3"><a rel="noreferrer" href="https://twitter.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-twitter"></span></a></li>
-              <li class="mr-3"><a rel="noreferrer" href="https://facebook.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-              <li><a rel="noreferrer" href="https://instagram.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-instagram"></span></a></li>
-          </ul>
+        <ul class="m-list-unstyled m-d-flex m-align-items-center show-big">
+          <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-1" href="about.html">About</a></li>
+          <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-1" href="training.html">Personal training</a></li>
+          <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-1" href="rulebook.html">Rulebook</a></li>
+          <li class="m-float"><a class="m-nav-color m-d-block px-3 py-2 mx-0 m-rounded-pill bg-success white-text" href="signup.html"><strong>Make an appointment</strong></a></li>
+        </ul>
+        <ul class="m-list-unstyled m-d-flex m-align-items-center m-0 p-0 hide-on-med-and-down">
+          <li class="ml-4"><a rel="noreferrer" href="https://twitter.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-twitter"></span></a></li>
+            <li class="ml-3"><a rel="noreferrer" href="https://facebook.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+            <li class="ml-3"><a rel="noreferrer" href="https://instagram.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-instagram"></span></a></li>
+        </ul>
+        <button class="show-small d-inline-block d-md-none navbar-toggler p-3 m-0 outline-none m-border-none m-bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"><span class="fas fa-bars"></span></button>
       </div>
     </div>
+    <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent1">
+      <ul class="navbar-nav center pt-2 pb-4">
+        <li class="nav-item">
+          <a class="nav-link py-1 my-1 m-d-inline-block" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-1 my-1 m-d-inline-block" href="training.html">Personal Training</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-1 my-1 m-d-inline-block" href="rulebook.html">Rulebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="m-rounded-pill nav-link px-3 py-2 my-1 white-text bg-success m-d-inline-block" href="signup.html">Make an appointment</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  <nav class="m-d-flex m-bg-white m-justify-content-center row py-2 px-3 m-0 h-auto m-shadow nav2">
-    <div class="nav-wrapper col s9 m-d-flex m-justify-content-between m-align-items-center m-margin-left-0">
+  <nav class="m-d-flex m-bg-white m-align-items-center m-flex-column row py-2 px-3 m-0 h-auto m-shadow nav2">
+    <div class="nav-wrapper col s12 xl9 m-d-flex m-justify-content-between m-align-items-center m-margin-left-0">
       <a href="index.html" class="m-d-flex nav-brand"><img class="m-d-inline-block" height="60" src="img/logo.png" alt=""></a>
-      <div id="menu" class="m-d-flex">
-          <ul class="m-list-unstyled m-d-flex navbar-nav m-align-items-center mr-4">
-            <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="about.html">About</a></li>
-            <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="training.html">Personal training</a></li>
-            <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="rulebook.html">Rule book</a></li>
-            <li class="m-float"><a class="m-nav-color m-d-block px-3 py-2 mx-2 m-rounded-pill bg-success white-text" href="signup.html"><strong>Make an appointment</strong></a></li>
-          </ul>
-          <ul class="m-list-unstyled m-d-flex m-align-items-center m-0 p-0">
-            <li class="mr-3"><a rel="noreferrer" href="https://twitter.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-twitter"></span></a></li>
-              <li class="mr-3"><a rel="noreferrer" href="https://facebook.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-              <li><a rel="noreferrer" href="https://instagram.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-instagram"></span></a></li>
-          </ul>
+      <div id="menu" class="m-d-flex hide">
+        <ul class="m-list-unstyled m-d-flex m-align-items-center">
+          <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="about.html">About</a></li>
+          <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="training.html">Personal training</a></li>
+          <li class="m-float"><a class="m-nav-color m-d-block p-2 mx-2" href="rulebook.html">Rulebook</a></li>
+          <li class="m-float"><a class="m-nav-color m-d-block px-3 py-2 mx-2 m-rounded-pill bg-success white-text" href="signup.html"><strong>Make an appointment</strong></a></li>
+        </ul>
+        <ul class="m-list-unstyled m-d-flex m-align-items-center m-0 p-0 hide-on-med-and-down">
+          <li class="ml-4"><a rel="noreferrer" href="https://twitter.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-twitter"></span></a></li>
+            <li class="ml-3"><a rel="noreferrer" href="https://facebook.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+            <li class="ml-3"><a rel="noreferrer" href="https://instagram.com" class="text-secondary hover-success p-0 m-0 h5" target="_blank"><span class="fab fa-instagram"></span></a></li>
+        </ul>
+        <button class="d-inline-block d-md-none navbar-toggler toggler-example p-3 m-0 outline-none m-border-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"><span class="fas fa-bars"></span></button>
       </div>
-    </div>
   </nav>
-  <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.2649485778593!2d20.483627915803385!3d44.77540358715813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f6841bff39%3A0xad66783daed8c7c1!2sBra%C4%87e%20Jerkovi%C4%87%2069%2C%20Beograd%2011010!5e0!3m2!1sen!2srs!4v1590425769966!5m2!1sen!2srs" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <div class="vh50">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.2649485778593!2d20.483627915803385!3d44.77540358715813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f6841bff39%3A0xad66783daed8c7c1!2sBra%C4%87e%20Jerkovi%C4%87%2069%2C%20Beograd%2011010!5e0!3m2!1sen!2srs!4v1590425769966!5m2!1sen!2srs" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
   <div class="row m-d-flex m-flex-column m-align-items-center">
     <h1 class="mb-0 mt-3">City Gym</h1>
     <div class="lil-divider mb-4">
       <h2 class="m-4">We are at your disposal!</h2>
     </div>
-    <div class="col s9 ml-0 m-d-flex m-flex-row">
-      <div class="col s8 ml-0">
+    <div class="col s12 l11 xl9 ml-0 m-d-flex m-justify-content-center">
+      <div class="col s12 m8 ml-0">
         <form class="m-d-flex m-flex-column m-align-items-center" id="contact-form" action="send.php" method="POST">
           <div class="m-d-flex m-w-100">
             <div class="flex-grow-1 mr-4">
@@ -86,16 +103,15 @@
           <button class="mt-4 mb-2 py-2 px-3 m-rounded-pill bg-success m-border-none white-text" form="contact-form" type="submit"><strong>Send Message</strong></button>
         </form>
       </div>
-      <div class="col s4 ml-0" id="cimg-9"></div>
+      <div class="col s4 ml-0 show-big" id="cimg-9"></div>
     </div>
   </div>
-  <div class="m-bg-light m-d-flex py-4 m-justify-content-center m-align-items-center">
+  <div class="m-bg-light m-d-flex py-4 m-justify-content-center m-align-items-center center">
     <h2 class="text-uppercase my-0 mx-4">Great mood is within arms reach</h2>
-    <span><a class="m-text-light bg-success m-rounded-pill px-3 py-2 h4 text-uppercase" href="signup.html">Sign up today</a></span>
   </div>
   <footer class="grey darken-4 grey-text text-darken-1 pt-3 m-d-flex m-align-items-center m-flex-column row mb-0">
-    <div class="m-d-flex m-justify-content-around col s7 ml-0">
-      <div class="px-5">
+    <div class="m-d-flex m-justify-content-around col s11 xl9 ml-0 flex-wrap m-align-items-center">
+      <div class="px-2 col s4 m-768-6 center">
         <h5 class="py-4 mb-0">Working hours</h5>
         <ul class="text-light-gray list-unstyled mt-0">
           <li class="py-2">Mandatory appointment</li>
@@ -104,7 +120,7 @@
           <li class="py-2">Not working sundays</li>
         </ul>
       </div>
-      <div class="px-5">
+      <div class="px-2 col s4 m-768-6 center">
         <h5 class="py-4 mb-0">Navigation</h5>
         <ul class="text-light-gray list-unstyled mt-0">
           <li class="py-2"><a class="footer-link" href="about.html">About us</a></li>
@@ -113,7 +129,7 @@
           <li class="py-2"><a class="footer-link" href="signup.html">Make an appointment</a></li>
         </ul>
       </div>
-      <div class="px-5">
+      <div class="px-2 col s4 m-768-8 center">
         <h5 class="py-4 mb-0">Contact</h5>
         <ul class="text-light-gray list-unstyled mt-0">
           <li class="py-2">We're at Your disposal</li>

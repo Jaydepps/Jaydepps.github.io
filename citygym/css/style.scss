@@ -205,9 +205,11 @@ a:hover{
 }
 .footer-link{
     color: #bdbdbd;
+    border-bottom: dashed #28a745 1px;
     transition: all 0.5s;
     &:hover{
         color: #28a745;
+        border-color: #bdbdbd;
     }
 }
 .divider{
