@@ -42,12 +42,12 @@
             <a class="rounded-pill nav-link px-3 py-2 mx-0 text-light font-weight-bold bg-success" href="signup.html">Make an appointment</a>
           </li>
         </ul>
-        <button class="d-inline-block d-md-none navbar-toggler toggler-example border-0 p-3 m-0 outline-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"><span class="fas fa-bars"></span></button>
         <ul class="d-none d-lg-flex flex-row list-unstyled align-items-center ml-4 mb-0 h5">
             <li class="mr-3"><a rel="noreferrer" href="https://twitter.com" class="text-secondary hover-success" target="_blank"><span class="fab fa-twitter"></span></a></li>
             <li class="mr-3"><a rel="noreferrer" href="https://facebook.com" class="text-secondary hover-success" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
             <li><a rel="noreferrer" href="https://instagram.com" class="text-secondary hover-success" target="_blank"><span class="fab fa-instagram"></span></a></li>
         </ul>
+        <button class="d-inline-block d-md-none navbar-toggler border-0 p-3 m-0 outline-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"><span class="fas fa-bars"></span></button>
       </div>
     </div>
     <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent1">
@@ -269,7 +269,7 @@
     <div class="container-fluid divider d-flex justify-content-center py-3">
       <div class="d-flex justify-content-between col-10">
         <div>
-          <span class="text-light-gray">&copy;&nbsp;<a class="footer-link" href="author.html">Nikola Stojkovic</a></span>
+          <span class="text-light-gray">&copy;&nbsp;<a class="footer-link" href="author.html">Nikola Stojkovic 63/19</a></span>
         </div>
         <div>
           <ul class="list-inline my-0">
@@ -282,5 +282,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    $(document).ready(function () {
+      $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+      });
+      $(document).scroll(function (event) {
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened)
+          $(".navbar-toggler").click();
+      })
+    });
+  </script>
 </body>
 </html>

@@ -143,7 +143,7 @@
     <div class="m-w-100 grey darken-4 m-divider m-d-flex m-justify-content-center py-3">
       <div class="m-d-flex m-justify-content-between col s10 ml-0 grey-text text-lighten-1">
         <div>
-          <span class="">&copy;&nbsp;<a class="footer-link" href="author.html">Nikola Stojkovic</a></span>
+          <span class="">&copy;&nbsp;<a class="footer-link" href="author.html">Nikola Stojkovic 63/19</a></span>
         </div>
         <div>
           <ul class="my-0">
@@ -156,5 +156,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    $(document).ready(function () {
+      $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+      });
+      $(document).scroll(function (event) {
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened)
+          $(".navbar-toggler").click();
+      })
+    });
+  </script>
 </body>
 </html>
