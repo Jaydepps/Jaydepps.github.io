@@ -30,9 +30,9 @@ Description:    Custom CSS
 	8. team
 		8.1 .nertuff-team-1
 		8.2 .nertuff-team-2
-	9. blog
-		9.1 .nertuff-blog-1
-		9.2 .nertuff-blog-2
+	9. clients
+		9.1 .nertuff-clients-1
+		9.2 .nertuff-clients-2
 	11. contact
 		11.1 .nertuff-contact
 	12. newsletter
@@ -131,8 +131,11 @@ h1,h2,h3{
 .nertuff-count{
 	background-color: #343330;
 	color: #F3F3F3;
-    border-left: 40px solid #4D5359;
+	margin-left: 40px;
 	word-wrap: break-word;
+}
+.nertuff-count-parent{
+	background-color: rgba(77, 83, 89, 0.8);
 }
 /* END OF COUNT */
 /* REVIEWS */
@@ -158,39 +161,43 @@ h1,h2,h3{
 }
 #reviews .slick-dots li button:before {
     color: #fff;
-  }
+}
 /* END OF REVIEWS */
 /* TEAM */
 .nertuff-team-1{
-	background-color: #1F5673;
+	background-color: #3F585F;
 	color: #F3F3F3;
-	border-right: 40px solid #60463B;
+	border-right: 40px solid #432E36;
 }
 #team .nertuff-team-2{
-	background-color: #dddddd;
-	color: #000000;
+	background-color: #432E36;
+	color: #fff;
 	border: 0;
 	border-radius: 0;
 }
+.nertuff-team-2 img{
+	border: 1rem solid #fff;
+	box-sizing: content-box;
+}
 /* END OF TEAM */
-/* BLOG */
-.nertuff-blog-1{
+/* clients */
+.nertuff-clients-1{
+	background-color: #1F5673;
+	color: #F3F3F3;
+	border-left: 40px solid #60463B;
+}
+.nertuff-clients-2{
+	background-color: #041F1E;
+	color: #F3F3F3;
+	border: 0;
+	border-radius: 0;
+}
+/* END OF clients */
+/* CONTACT */
+.nertuff-contact{
 	background-color: #041F1E;
 	color: #F3F3F3;
 	border-left: 40px solid #702632;
-}
-.nertuff-blog-2{
-	background-color: #041F1E;
-	color: #F3F3F3;
-	border: 0;
-	border-radius: 0;
-}
-/* END OF BLOG */
-/* CONTACT */
-.nertuff-contact{
-	background-color: #5E503F;
-	color: #F3F3F3;
-	border-left: 40px solid #432E36;
 }
 /* END OF CONTACT */
 /* NEWSLETTER */
@@ -266,18 +273,12 @@ h1,h2,h3{
 	color: #DBDBDB;
 }
 /* END OF NAVIGATION */
-/* LINK SHOW */
-/* .nertuff-link-show{
-    padding-top: 60px;
-    margin-top: -60px;
-} */
-/* END OF LINK SHOW */
 /* LINKS */
 .nertuff-link-1{
-	color: #343330;
+	color: #fff;
 }
 .nertuff-link-1:hover{
-	color: #1F5673;
+	color: #ccc;
 }
 .nertuff-link-2{
 	color: #F3F3F3;
@@ -377,24 +378,21 @@ h1,h2,h3{
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	background-color: rgba(192, 179, 168, 0.6);
+	background-color: rgba(204, 204, 204, 0.5);
 	backdrop-filter: blur(2px);
 	padding: 20px;
 	text-align: center;
 	margin: 0 0 0 0;
 	cursor: pointer;
 	transition: 0.5s;
-	border-radius: 25%;
 	z-index: 1000;
 }
-#nertuff-scroll:hover{
-	transition: 0.5s;	
+#nertuff-scroll:hover{	
+	background-color: rgba(204, 204, 204, 0.7);
 }
 #nertuff-scroll .fas{
 	font-size: 30px;
 	color: #000000;
-	margin-top: -5px;
-	margin-left: 1px;
 	transition: 0.5s;
 }
 /* END OF SCROLL TOP */
@@ -594,4 +592,19 @@ section:target{
 }
 .big{
 	font-size: 1.5em !important;
+}
+#clients-slick-slider img{
+	width: 6rem;
+}
+.slick-track{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+#clients-slick-slider .slick-dots li button:before {
+    color: #fff;
+}
+.text-red{
+	color: #FF2121;
 }
