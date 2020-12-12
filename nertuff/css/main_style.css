@@ -22,11 +22,11 @@ Description:    Custom CSS
 		5.2 .nertuff-services-2
 	6. count
 		6.1 .nertuff-count
-	7. reviews
-		7.1 .nertuff-reviews-1
-		7.2 .nertuff-reviews-2
-		7.3 .nertuff-reviews-3
-		7.4 .nertuff-reviews-img
+	7. testimonies
+		7.1 .nertuff-testimonies-1
+		7.2 .nertuff-testimonies-2
+		7.3 .nertuff-testimonies-3
+		7.4 .nertuff-testimonies-img
 	8. team
 		8.1 .nertuff-team-1
 		8.2 .nertuff-team-2
@@ -138,31 +138,31 @@ h1,h2,h3{
 	background-color: rgba(77, 83, 89, 0.8);
 }
 /* END OF COUNT */
-/* REVIEWS */
-.nertuff-reviews-1{
+/* testimonies */
+.nertuff-testimonies-1{
 	background-color: #343330;
 	color: #F3F3F3;
     margin-left: 40px;
 }
-.nertuff-reviews-1-parent{
+.nertuff-testimonies-1-parent{
 	background-color:  rgba(77, 83, 89, 0.8);
 }
-.nertuff-reviews-2{
+.nertuff-testimonies-2{
 	color: #F3F3F3;
 	padding: 0;
 	margin: 0;
 }
-.nertuff-reviews-3{
+.nertuff-testimonies-3{
 	color: #CFDBD5;
 }
-#reviews .nertuff-reviews-img{
+#testimonies .nertuff-testimonies-img{
 	height: 15rem;
 	border: #fff solid 0.5rem;
 }
-#reviews .slick-dots li button:before {
+#testimonies .slick-dots li button:before {
     color: #fff;
 }
-/* END OF REVIEWS */
+/* END OF testimonies */
 /* TEAM */
 .nertuff-team-1{
 	background-color: #3F585F;
@@ -546,9 +546,6 @@ section{
 	background-color: #343330;
 	background-clip: border-box !important;
 }
-section:target{
-	padding-top: 5rem;
-}
 .nertuff-nav-link{
 	position: relative;
 }
@@ -601,6 +598,9 @@ section:target{
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+}
+#team .slick-track{
+	align-items: stretch;
 }
 #clients-slick-slider .slick-dots li button:before {
     color: #fff;
