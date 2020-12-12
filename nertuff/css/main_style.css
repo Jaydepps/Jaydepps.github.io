@@ -156,8 +156,8 @@ h1,h2,h3{
 	color: #CFDBD5;
 }
 #reviews .nertuff-reviews-img{
-    width: 120px;
-    height: 80px;
+	height: 15rem;
+	border: #fff solid 0.5rem;
 }
 #reviews .slick-dots li button:before {
     color: #fff;

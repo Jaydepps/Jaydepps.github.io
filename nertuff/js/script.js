@@ -36,17 +36,10 @@ var allModsL = $(".module-l");
 $(document).ready(function(){
 	var $reviewSlider = $(".slick-slider").slick({
 		dots: true,
-		prevArrow: '<span class="slick-prev custom-slick-prev big"></span>',
+		prevArrow: '<span class="slick-prev custom-slick-prev big text-right"></span>',
 		nextArrow: '<span class="slick-next custom-slick-next big"></span>',
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					autoplay: true,
-					autoplaySpeed: 2500
-				}
-			}
-		]
+		autoplay: true,
+		autoplaySpeed: 3500
 	});
 	$reviewSlider.parent().find(".control-next").on("click", function(){
 		$reviewSlider.slick("slickNext");
@@ -59,7 +52,7 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 3500,
 		mobileFirst: true,
-		prevArrow: '<span class="slick-prev custom-slick-prev big"></span>',
+		prevArrow: '<span class="slick-prev custom-slick-prev big text-right"></span>',
 		nextArrow: '<span class="slick-next custom-slick-next big"></span>',
 		responsive: [
 			{
@@ -83,7 +76,7 @@ $(document).ready(function(){
 		mobileFirst: true,
 		autoplay: true,
 		autoplaySpeed: 1500,
-		prevArrow: '<span class="slick-prev custom-slick-prev big"></span>',
+		prevArrow: '<span class="slick-prev custom-slick-prev big text-right"></span>',
 		nextArrow: '<span class="slick-next custom-slick-next big"></span>',
 		responsive: [
 			{
@@ -278,7 +271,7 @@ function lastnameCheck(){
 	return true;
 }
 function emailCheck(){
-	let pattern = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+	let pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	let email = $("#form_email").val();
 	if(!pattern.test(email)){
 		$("#email-warning").removeClass("invisible");
@@ -308,7 +301,7 @@ function contactForm(){
 	return fCheck && lCheck && eCheck && mCheck;
 }
 function newsletterCheck(){
-	let pattern = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+	let pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	let email = $("#newsletterEmail").val();
 	if(!pattern.test(email)){
 		$("#newsletter-warning").removeClass("invisible");
@@ -350,4 +343,9 @@ $("#creative-tab").click(function(){
 });
 $("#nertuff-scroll").click(function(){
 	window.scrollTo(0,0);
+})
+$(document).click(function(event){
+	if(!$(event.target).is(".navbar-collapse *")||$(event.target).is(".nav-link")){
+		$(".navbar-collapse").collapse("hide");
+	}
 })
