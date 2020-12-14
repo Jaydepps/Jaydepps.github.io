@@ -55,6 +55,7 @@ var linkListLink = ["https://www.instagram.com/", "https://www.facebook.com/", "
 var linkListClass = ["fab fa-instagram fa-lg mr-2", "fab fa-facebook-f fa-lg mr-2", "fab fa-twitter fa-lg mr-2", "fab fa-whatsapp fa-lg mr-2", "fab fa-reddit-alien fa-lg"]
 
 $(document).ready(function(){
+	$("#nertuff-scroll").hide();
 	for (let index = 0; index < 8; index++) {
 		$(".navbar-nav").append(`<li class="nav-item"><a class="nav-link nertuff-nav-link d-inline-block px-2" href="${menuLink[index]}">${menu[index]}</a></li>`);
 	}
@@ -218,9 +219,9 @@ win.scroll(function(event) {
 		serviceCardsAnimation();
 	}
 	if(scrollY > 100){
-		$("#nertuff-scroll").removeClass("d-none");
+		$("#nertuff-scroll").fadeIn("fast");
 	}else{
-		$("#nertuff-scroll").addClass("d-none");
+		$("#nertuff-scroll").fadeOut("fast");
 	}
 });
 function updateUsersCount() {
