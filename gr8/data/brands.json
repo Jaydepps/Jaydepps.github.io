@@ -1,0 +1,50 @@
+[
+    {
+        "id": "0",
+        "name": "Altos"
+    },
+    {
+        "id": "1",
+        "name": "ASUS"
+    },
+    {
+        "id": "2",
+        "name": "Lenovo"
+    },
+    {
+        "id": "3",
+        "name": "HP"
+    },
+    {
+        "id": "4",
+        "name": "Logitech"
+    },
+    {
+        "id": "5",
+        "name": "Redragon"
+    },
+    {
+        "id": "6",
+        "name": "Genius"
+    },
+    {
+        "id": "7",
+        "name": "SONY"
+    },
+    {
+        "id": "8",
+        "name": "Philips"
+    },
+    {
+        "id": "9",
+        "name": "Apple"
+    },
+    {
+        "id": "10",
+        "name": "Huawei"
+    },
+    {
+        "id": "11",
+        "name": "Samsung"
+    }
+]

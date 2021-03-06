@@ -1,0 +1,733 @@
+[
+    {
+        "id" : "0",
+        "name" : "Tech II",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":39990,
+            "discount":10,
+            "old" : 44433
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Procesor: AMD Ryzen 5 3400G, Memorija: 8 GB DDR4, Hard disk: 240 GB SSD SATA3, Matična ploča: AAM4 A320, Kućište: Mid -Tower 500 W",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "1",
+        "name" : "Rocket II",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":62990,
+            "discount":10,
+            "old" : 69989
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "2",
+        "name" : "Prometheus",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":99990,
+            "discount":10,
+            "old" : 111100
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "3",
+        "name" : "IdeaCentre 510-15",
+        "brandId" : 2,
+        "catId" :[0],
+        "price":
+        {
+            "current":62213,
+            "discount":20,
+            "old" : 77767
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "4",
+        "name" : "UX391FA-AH008R",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":128435,
+            "discount":15,
+            "old" : 151100
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
+        "colors":["Black", "Gray", "White"],
+        "sizes":[]
+    },
+    {
+        "id" : "5",
+        "name" : "Zephyrus M GU502GV-A",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":215990,
+            "discount":10,
+            "old" : 239989
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
+        "colors":["Black", "Red"],
+        "sizes":[]
+    },
+    {
+        "id" : "6",
+        "name" : "81H300FVYA",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":49990,
+            "discount":10,
+            "old" : 55544
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "7",
+        "name" : "IdeaPad Gaming 3",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":119990,
+            "discount":10,
+            "old" : 133322
+        },
+        "stars" : 5,
+        "isNew" : false,
+        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "8",
+        "name" : "Rocket II",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":62990,
+            "discount":10,
+            "old" : 69989
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "9",
+        "name" : "Prometheus",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":99990,
+            "discount":10,
+            "old" : 111100
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "10",
+        "name" : "IdeaCentre 510-15",
+        "brandId" : 2,
+        "catId" :[0],
+        "price":
+        {
+            "current":62213,
+            "discount":20,
+            "old" : 77767
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "11",
+        "name" : "UX391FA-AH008R",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":128435,
+            "discount":15,
+            "old" : 151100
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
+        "colors":["Black", "Gray", "White"],
+        "sizes":[]
+    },
+    {
+        "id" : "12",
+        "name" : "Zephyrus M GU502GV-A",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":215990,
+            "discount":10,
+            "old" : 239989
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
+        "colors":["Black", "Red"],
+        "sizes":[]
+    },
+    {
+        "id" : "13",
+        "name" : "81H300FVYA",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":49990,
+            "discount":10,
+            "old" : 55544
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "14",
+        "name" : "IdeaPad Gaming 3",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":119990,
+            "discount":10,
+            "old" : 133322
+        },
+        "stars" : 5,
+        "isNew" : false,
+        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "15",
+        "name" : "Rocket II",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":62990,
+            "discount":10,
+            "old" : 69989
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "16",
+        "name" : "Prometheus",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":99990,
+            "discount":10,
+            "old" : 111100
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "17",
+        "name" : "IdeaCentre 510-15",
+        "brandId" : 2,
+        "catId" :[0],
+        "price":
+        {
+            "current":62213,
+            "discount":20,
+            "old" : 77767
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "18",
+        "name" : "UX391FA-AH008R",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":128435,
+            "discount":15,
+            "old" : 151100
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
+        "colors":["Black", "Gray", "White"],
+        "sizes":[]
+    },
+    {
+        "id" : "19",
+        "name" : "Zephyrus M GU502GV-A",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":215990,
+            "discount":10,
+            "old" : 239989
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
+        "colors":["Black", "Red"],
+        "sizes":[]
+    },
+    {
+        "id" : "20",
+        "name" : "81H300FVYA",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":49990,
+            "discount":10,
+            "old" : 55544
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "21",
+        "name" : "IdeaPad Gaming 3",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":119990,
+            "discount":10,
+            "old" : 133322
+        },
+        "stars" : 5,
+        "isNew" : false,
+        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "22",
+        "name" : "Rocket II",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":62990,
+            "discount":10,
+            "old" : 69989
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "23",
+        "name" : "Prometheus",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":99990,
+            "discount":10,
+            "old" : 111100
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "24",
+        "name" : "IdeaCentre 510-15",
+        "brandId" : 2,
+        "catId" :[0],
+        "price":
+        {
+            "current":62213,
+            "discount":20,
+            "old" : 77767
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "25",
+        "name" : "UX391FA-AH008R",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":128435,
+            "discount":15,
+            "old" : 151100
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
+        "colors":["Black", "Gray", "White"],
+        "sizes":[]
+    },
+    {
+        "id" : "26",
+        "name" : "Zephyrus M GU502GV-A",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":215990,
+            "discount":10,
+            "old" : 239989
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
+        "colors":["Black", "Red"],
+        "sizes":[]
+    },
+    {
+        "id" : "27",
+        "name" : "81H300FVYA",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":49990,
+            "discount":10,
+            "old" : 55544
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "28",
+        "name" : "IdeaPad Gaming 3",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":119990,
+            "discount":10,
+            "old" : 133322
+        },
+        "stars" : 5,
+        "isNew" : false,
+        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "29",
+        "name" : "Rocket II",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":62990,
+            "discount":10,
+            "old" : 69989
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "30",
+        "name" : "Prometheus",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":99990,
+            "discount":10,
+            "old" : 111100
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "31",
+        "name" : "IdeaCentre 510-15",
+        "brandId" : 2,
+        "catId" :[0],
+        "price":
+        {
+            "current":62213,
+            "discount":20,
+            "old" : 77767
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "32",
+        "name" : "UX391FA-AH008R",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":128435,
+            "discount":15,
+            "old" : 151100
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
+        "colors":["Black", "Gray", "White"],
+        "sizes":[]
+    },
+    {
+        "id" : "33",
+        "name" : "Zephyrus M GU502GV-A",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":215990,
+            "discount":10,
+            "old" : 239989
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
+        "colors":["Black", "Red"],
+        "sizes":[]
+    },
+    {
+        "id" : "34",
+        "name" : "81H300FVYA",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":49990,
+            "discount":10,
+            "old" : 55544
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "35",
+        "name" : "IdeaPad Gaming 3",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":119990,
+            "discount":10,
+            "old" : 133322
+        },
+        "stars" : 5,
+        "isNew" : false,
+        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "36",
+        "name" : "Rocket II",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":62990,
+            "discount":10,
+            "old" : 69989
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "37",
+        "name" : "Prometheus",
+        "brandId" : 0,
+        "catId" :[0],
+        "price":
+        {
+            "current":99990,
+            "discount":10,
+            "old" : 111100
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "38",
+        "name" : "IdeaCentre 510-15",
+        "brandId" : 2,
+        "catId" :[0],
+        "price":
+        {
+            "current":62213,
+            "discount":20,
+            "old" : 77767
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
+        "colors":[],
+        "sizes":[]
+    },
+    {
+        "id" : "39",
+        "name" : "UX391FA-AH008R",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":128435,
+            "discount":15,
+            "old" : 151100
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
+        "colors":["Black", "Gray", "White"],
+        "sizes":[]
+    },
+    {
+        "id" : "40",
+        "name" : "Zephyrus M GU502GV-A",
+        "brandId" : 1,
+        "catId" :[1],
+        "price":
+        {
+            "current":215990,
+            "discount":10,
+            "old" : 239989
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
+        "colors":["Black", "Red"],
+        "sizes":[]
+    },
+    {
+        "id" : "41",
+        "name" : "81H300FVYA",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":49990,
+            "discount":10,
+            "old" : 55544
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "colors":["Black"],
+        "sizes":[]
+    },
+    {
+        "id" : "42",
+        "name" : "IdeaPad Gaming 3",
+        "brandId" : 2,
+        "catId" :[1],
+        "price":
+        {
+            "current":119990,
+            "discount":10,
+            "old" : 133322
+        },
+        "stars" : 5,
+        "isNew" : false,
+        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
+        "colors":["Black"],
+        "sizes":[]
+    }
+]
