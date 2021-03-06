@@ -173,7 +173,7 @@ $(document).ready(function(){
 		localStorage.setItem("product-id", $(this).attr("data-id"))
 	})
 
-	if(window.location.pathname=="/store.html"){
+	if(window.location.pathname.indexOf("store.html") !== -1){
 		if(window.location.search)
 			storeRedirect();
 		if(localStorage.getItem("sort"))
