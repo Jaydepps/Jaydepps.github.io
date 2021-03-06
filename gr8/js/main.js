@@ -11,7 +11,6 @@ $(document).ready(function(){
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 		var currentScrollPos = window.pageYOffset;
-		console.log(parseInt($("header").outerHeight()) + parseInt($("header").css("top")))
 		if (prevScrollpos > currentScrollPos) {
 			$("header").css("top", "0px")
 		} else {
@@ -1020,7 +1019,7 @@ $(document).ready(function(){
 					appendArrows: $nav ? $nav : false,
 				});
 			});    
-		}, 200);
+		}, 300);
 
 	}
 	
