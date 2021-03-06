@@ -1,3 +1,6 @@
+jQuery.ajaxPrefilter(function( options ) {
+    options.global = true;
+});
 $(document).ready(function(){
 	$("header").next().css("margin-top", parseInt($("header").height()))
 	var categories, brands, products, filteredProducts, filterSearch = "", filterCategories = [], filterBrand = null, filterPrice = [1, 1000000], sortType = 0, showNumber = 10, currentPage = 1, slickIndex = 1;
@@ -410,7 +413,7 @@ $(document).ready(function(){
 		setTimeout(() => {
 			populateProducts(data);
 		}, 100);
-		initSlick()
+		cartUpdate();
 	}
 
 	function populateProducts(data){
@@ -942,87 +945,83 @@ $(document).ready(function(){
 	}
 
 	/////////////////////////////////////////
-	function initSlick(){
-		setTimeout(() => {
-			cartUpdate()
-					// Products Slick
-			$('.products-slick').each(function() {
-				var $this = $(this),
-						$nav = $this.attr('data-nav');
-	
-				$this.slick({
-					slidesToShow: 4,
-					slidesToScroll: 1,
-					autoplay: true,
-					infinite: true,
-					speed: 300,
-					dots: false,
-					arrows: true,
-					appendArrows: $nav ? $nav : false,
-					responsive: [
-						{
-							breakpoint: 991,
-							settings: {
-								slidesToShow: 2,
-								slidesToScroll: 1,
-							}
-						},
-						{
-							breakpoint: 480,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-								}
-						}
-					]
-				});
-			});
-	
-			$('#product-imgs').slick({
-				slidesToShow: 3,
+	setTimeout(() => {
+		console.log("slick")
+				// Products Slick
+		$('.products-slick').each(function() {
+			var $this = $(this),
+					$nav = $this.attr('data-nav');
+
+			$this.slick({
+				slidesToShow: 4,
 				slidesToScroll: 1,
-				arrows: true,
-				centerMode: true,
 				autoplay: true,
-				speed: 400,
-				focusOnSelect: true,
-					centerPadding: 0,
-					vertical: true,
-				asNavFor: '#product-main-img',
-					responsive: [{
-						breakpoint: 991,
-						settings: {
-							vertical: false,
-							arrows: false,
-							dots: true,
-						}
-					},
-				]
-			});
-			$('#product-main-img').slick({
 				infinite: true,
 				speed: 300,
 				dots: false,
-				arrows: false,
-				fade: true,
-				asNavFor: '#product-imgs',
+				arrows: true,
+				appendArrows: $nav ? $nav : false,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							}
+					}
+				]
 			});
-			$('.products-widget-slick').each(function() {
-				var $this = $(this),
-						$nav = $this.attr('data-nav');
-				$this.slick({
-					infinite: true,
-					autoplay: true,
-					speed: 300,
-					dots: false,
-					arrows: true,
-					appendArrows: $nav ? $nav : false,
-				});
-			});    
-		}, 300);
+		});
 
-	}
-	
+		$('#product-imgs').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: true,
+			centerMode: true,
+			autoplay: true,
+			speed: 400,
+			focusOnSelect: true,
+				centerPadding: 0,
+				vertical: true,
+			asNavFor: '#product-main-img',
+				responsive: [{
+					breakpoint: 991,
+					settings: {
+						vertical: false,
+						arrows: false,
+						dots: true,
+					}
+				},
+			]
+		});
+		$('#product-main-img').slick({
+			infinite: true,
+			speed: 300,
+			dots: false,
+			arrows: false,
+			fade: true,
+			asNavFor: '#product-imgs',
+		});
+		$('.products-widget-slick').each(function() {
+			var $this = $(this),
+					$nav = $this.attr('data-nav');
+			$this.slick({
+				infinite: true,
+				autoplay: true,
+				speed: 300,
+				dots: false,
+				arrows: true,
+				appendArrows: $nav ? $nav : false,
+			});
+		});
+	}, 450);
 	// Product img zoom
 	var zoomMainProduct = document.getElementById('product-main-img');
 	if (zoomMainProduct) {
