@@ -124,7 +124,7 @@ $(document).ready(function(){
 			$(`label[for="terms-error"]`).html("<p class='text-danger'>Please accept terms and conditions</p>")
 		}
 		if(!errorList.includes(false) && payment && checked){
-			window.location = `/index.html?successPage`
+			window.location = `/gr8/index.html?successPage`
 		}
 	})
 
@@ -474,13 +474,13 @@ $(document).ready(function(){
 				}
 			}
 		}
-		else if(window.location.pathname.indexOf("index") !== -1 || window.location.pathname == "/"){
+		else if(window.location.pathname.indexOf("index") !== -1 || window.location.pathname == "/gr8/"){
 			tabsFunc("#new-products-tabs")
 			tabsFunc("#top-selling-tabs")
 			tabsHideInactive();
 			if(window.location.search == "?successPage"){
 				$("#successfulPurchase").modal("toggle")
-				window.history.pushState({},"","/index.html")
+				window.history.pushState({},"","/gr8/index.html")
 				setCookie("cart", "", -7)
 				cartUpdate();
 			}
