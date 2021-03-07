@@ -1,6 +1,3 @@
-jQuery.ajaxPrefilter(function( options ) {
-    options.global = true;
-});
 $(document).ready(function(){
 	$("header").next().css("margin-top", parseInt($("header").height()))
 	var categories, brands, products, filteredProducts, filterSearch = "", filterCategories = [], filterBrand = null, filterPrice = [1, 1000000], sortType = 0, showNumber = 10, currentPage = 1, slickIndex = 1;
@@ -193,19 +190,32 @@ $(document).ready(function(){
 			var cart = JSON.parse(cartCookie.split("=")[1]);
 			for(item of cart){
 				if(item.id == id){
-					item.qty = item.qty + 1;
+					if($(this).parent().find("#add-qty").length)
+						item.qty = item.qty + parseInt($("#add-qty").val());
+					else
+						item.qty = item.qty + 1;
 					found = true;
 					setCookie("cart", JSON.stringify(cart), 7);
 					cartUpdate();
 				}
 			}
 			if(!found){
-				cart.push(
-					{
-						"id": id,
-						"qty": 1
-					}
-				)
+				if($(this).parent().find("#add-qty").length){
+					cart.push(
+						{
+							"id": id,
+							"qty": parseInt($("#add-qty").val())
+						}
+					)
+				}
+				else{
+					cart.push(
+						{
+							"id": id,
+							"qty": 1
+						}
+					)
+				}
 				setCookie("cart", JSON.stringify(cart), 7);
 				cartUpdate();
 			}
@@ -252,7 +262,6 @@ $(document).ready(function(){
 						</div>`;
 			$("body").append(html)
 			$("body").on("click", "#allow-cookies-btn", function(){
-				console.log($("#allow-cookies"))
 				localStorage.setItem("allowCookies", true)
 				$("#allow-cookies").fadeOut("slow", function(){
 					$("#allow-cookies").attr("style", "display: none !important")
@@ -260,7 +269,6 @@ $(document).ready(function(){
 			})
 		}
 	}
-
 
 	function ajaxGet(filename, type, callback){
 		$.ajax({
@@ -453,7 +461,7 @@ $(document).ready(function(){
 					document.title = `GR8 - ${brandFunc(product)} ${product.name}`;
 					$(".product-name").html(`${brandFunc(product)} ${product.name}`);
 					$(".rating").html(ratingFunc(product));
-					$(".product-price").html(`${addDots(product.price.current)} RSD <del class="product-old-price"><sup>${oldPriceFunc(product)} RSD</sup></del>`);
+					$(".product-details .product-price").html(`${addDots(product.price.current)} RSD <del class="product-old-price"><sup>${oldPriceFunc(product)} RSD</sup></del>`);
 					$(".description").html(product.description);
 					$(".size-choice").html(choiceFunc(product, "sizes"));
 					$(".color-choice").html(choiceFunc(product, "colors"));
@@ -471,7 +479,7 @@ $(document).ready(function(){
 			tabsFunc("#top-selling-tabs")
 			tabsHideInactive();
 			if(window.location.search == "?successPage"){
-				$("#exampleModal").modal("toggle")
+				$("#successfulPurchase").modal("toggle")
 				window.history.pushState({},"","/index.html")
 				setCookie("cart", "", -7)
 				cartUpdate();
@@ -592,7 +600,6 @@ $(document).ready(function(){
 		}
 		html += `</div>
 				<div id="slick-nav-5" class="products-slick-nav"></div>`
-		console.log(String(html))
 		return html;
 	}
 
@@ -603,7 +610,6 @@ $(document).ready(function(){
 			html += `<div class="products-slick" data-nav="#slick-nav-${slickIndex}" data-tab="${$(this).attr("data-cat")}">`
 			for(prod of products){
 				if(prod.catId.includes(parseInt($(this).attr("data-cat")))){
-					console.log(slickIndex)
 					html += `<div class="mw-100 mw-md-47 mw-xl-31 mx-2">
 								<div class="product">
 									<a data-id="${prod.id}" href="product.html" class="open-product">
@@ -682,34 +688,19 @@ $(document).ready(function(){
 	}
 
 	function storeRedirect(){
-		var productSearch;
 		var query;
-		var windowSearch = window.location.search.substring(1).split("&");
-		if(windowSearch){
-			for(index in windowSearch){
-				if(windowSearch[index].split("=")[0] == "s"){
-					productSearch = windowSearch[index].split("=")[1]; 
-				}
-			}
-			if(productSearch){
-				query = productSearch.replaceAll("+", " ");
-				$("#search").val(query);
-				setTimeout(() => {
-					searchChange()
-				}, 250);
-			}
+		var winSearch = window.location.search.split("&");
+		var urlSearch = winSearch.filter(function(el){
+			return el.indexOf("s=") > -1
+		});
+		if(urlSearch.length > 0){
+			search = urlSearch[0].split("=")[1];
+			query = search.replace("+", " ");
+			setTimeout(() => {
+				$("#search").val(query)
+				searchChange()
+			}, 250);
 		}
-		else{
-			if(!windowSearch.indexOf("s=") == -1){
-				windowSearch = window.location.search.split("=")[1];
-				query = windowSearch.replaceAll("+", " ");
-				$("#search").val(query);
-				setTimeout(() => {
-					searchChange()
-				}, 250);
-			}
-		}
-		
 	}
 
 	function addDots(nStr)
@@ -723,7 +714,6 @@ $(document).ready(function(){
 	}
 
 	function searchChange(){
-		console.log("in search change")
 		filterSearch = $("#search").val();
 		currentPage = 1;
 		modifyProducts();
@@ -946,7 +936,6 @@ $(document).ready(function(){
 
 	/////////////////////////////////////////
 	setTimeout(() => {
-		console.log("slick")
 				// Products Slick
 		$('.products-slick').each(function() {
 			var $this = $(this),
@@ -992,7 +981,7 @@ $(document).ready(function(){
 				vertical: true,
 			asNavFor: '#product-main-img',
 				responsive: [{
-					breakpoint: 991,
+					breakpoint: 765,
 					settings: {
 						vertical: false,
 						arrows: false,

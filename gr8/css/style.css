@@ -78,6 +78,15 @@ a {
   transition: 0.2s color;
 }
 
+#author-modal a{
+  color: #fff;
+}
+
+#author-modal a:hover, #author-modal a:focus {
+  color: #D10024;
+  text-decoration: none;
+}
+
 a:hover, a:focus {
   color: #D10024;
   text-decoration: none;
@@ -2351,4 +2360,7 @@ input.hide-clear[type=search]::-ms-reveal {
 
 header{
   transition: all 0.4s ease 0s;
+}
+.author-bg{
+  background-color: #333;
 }

@@ -35,7 +35,7 @@
 			<div id="top-header">
 				<div class="d-flex justify-content-between align-items-center col-9 mx-auto">
 					<ul class="header-links flex-grow-1">
-						<li class="d-none d-md-inline"><a href="tel:+381691234567"><i class="fa fa-phone"></i> +381-69-123-45-67</a></li>
+						<li><a href="tel:+381691234567"><i class="fa fa-phone"></i> +381-69-123-45-67</a></li>
 						<li><a href="mailto:support@gr8.com"><i class="fa fa-envelope-o"></i> support@gr8.com</a></li>
 						<li class="d-none d-md-inline"><a href="https://www.google.com/maps/place/Zdravka+%C4%8Celara+16,+Beograd/data=!4m2!3m1!1s0x475a7a9609031735:0x4b2dd3d867d041a?sa=X&ved=2ahUKEwjJmdTVt_vuAhXlzIUKHX7eBpoQ8gEwAHoECAMQAQ" target="_blank"><i class="fa fa-map-marker"></i> Zdravka Celara 16, Belgrade</a></li>
 					</ul>
@@ -131,7 +131,7 @@
 								<img src="./img/product5/0.webp" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Accessories<br>Collection</h3>
+								<h3>Laptop<br>Collection</h3>
 								<a href="store.html" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
@@ -145,7 +145,7 @@
 								<img src="./img/product0/0.webp" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Cameras<br>Collection</h3>
+								<h3>Smartphone<br>Collection</h3>
 								<a href="store.html" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
@@ -326,7 +326,7 @@
 								<h3 class="footer-title">Information</h3>
 								<ul class="footer-links">
 									<li><a href="checkout.html">Checkout</a></li>
-									<li><a id="author" href="#">Author</a></li>
+									<li><a type="button" data-bs-toggle="modal" data-bs-target="#author-modal" href="#">Author</a></li>
 									<li><a href="documentation.pdf">Documentation</a></li>
 								</ul>
 							</div>
@@ -366,7 +366,29 @@
 			<!-- /bottom footer -->
 		</footer>
 		<!-- /FOOTER -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="author-modal" tabindex="-1" aria-labelledby="author-modal" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content author-bg">
+					<div class="modal-header  border-dark">
+						<h4 class="modal-title mx-auto text-light">Author</h4>
+					</div>
+					<div class="modal-body d-flex">
+						<div class="col-4 me-3">
+							<img class="img-fluid rounded" src="img/author.png" alt="Author">
+						</div>
+						<div class="d-flex flex-column justify-content-between flex-grow-1 text-light">
+							<p>Hi, my name is Nikola Stojkovic and I'm an up-and-coming web developer from Serbia. I'm studying web development at ICT College as I've always had a knack for and been interested in IT.</p>
+							<p class="text-end">Check out my <a href="https://jaydepps.github.io/portfolio/">Portfolio</a> or send me an email at <a href="mailto:nikola.stojkovic.63.19@ict.edu.rs">nikola.stojkovic.63.19@ict.edu.rs</a></p>
+						</div>
+					</div>
+					<div class="modal-footer  border-dark">
+						<button type="button" class="primary-btn" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="successfulPurchase" tabindex="-1" aria-labelledby="successfulPurchase" aria-hidden="true">
 			<div class="modal-dialog modal-lg modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
