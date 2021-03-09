@@ -685,9 +685,9 @@ $(document).ready(function(){
 		$.ajax({
 			url: `./img/product${product.id}`,
 			success: function(data){
+				console.log(data)
 				$(data).find("a:contains(.webp)").each(function(){
 					var filename = this.href.replace(window.location.host, "").replace("http://", "");
-					console.log("./" + filename)
 					html +=`<div class="product-preview">
 								<img src="./${filename}" alt="${product.name}">
 							</div>`
