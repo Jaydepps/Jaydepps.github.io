@@ -1028,7 +1028,7 @@ $(document).ready(function(){
 				appendArrows: $nav ? $nav : false,
 			});
 		});
-	}, 450);
+	}, 500);
 	// Product img zoom
 	var zoomMainProduct = document.getElementById('product-main-img');
 	if (zoomMainProduct) {
