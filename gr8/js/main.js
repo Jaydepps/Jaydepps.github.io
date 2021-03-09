@@ -317,7 +317,6 @@ $(document).ready(function(){
 							</div>
 							<button data-id="${product.id}" class="delete"><i class="fa fa-close"></i></button>
 						</div>`
-				console.log(html)
 			}
 			html += `</div>
 					<div id="cart-summary">
@@ -679,23 +678,30 @@ $(document).ready(function(){
 		}
 		return html;
 	}
-	function loadProductImg(product, id){
+	function loadProductImg(product, divId){
+		console.log("in loadProduct")
 		var html = "";
-
-		$.ajax({
-			url: `./img/product${product.id}`,
-			success: function(data){
-				console.log(data)
-				$(data).find("a:contains(.webp)").each(function(){
-					var filename = this.href.replace(window.location.host, "").replace("http://", "");
-					html +=`<div class="product-preview">
-								<img src="./${filename}" alt="${product.name}">
-							</div>`
-				});
-			}
-			}).done(function(){
-				$(id).html(html);
-			});
+		var i = 0;
+		imgLoad();
+		function imgLoad(){
+			console.log("in imgLoad")
+			let img = new Image();
+			img.onload = imgSuccess;
+			img.onerror = imgFail;
+			img.src = `./img/product${product.id}/${i}.webp`;
+		}
+		function imgSuccess(){
+			console.log("in imgSuccess")
+			html+=`<div class="product-preview">
+						<img src="./img/product${product.id}/${i}.webp" alt="${product.name}">
+					</div>`
+			i++;
+			imgLoad();
+		}
+		function imgFail(){
+			console.log("in imgFail")
+			$(divId).html(html);
+		}
 	}
 
 	function storeRedirect(){
