@@ -687,8 +687,9 @@ $(document).ready(function(){
 			success: function(data){
 				$(data).find("a:contains(.webp)").each(function(){
 					var filename = this.href.replace(window.location.host, "").replace("http://", "");
+					console.log("./" + filename)
 					html +=`<div class="product-preview">
-								<img src="${filename}" alt="${product.name}">
+								<img src="./${filename}" alt="${product.name}">
 							</div>`
 				});
 			}
