@@ -137,597 +137,682 @@
     },
     {
         "id" : "8",
-        "name" : "Rocket II",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "82GW0033YA",
+        "brandId" : 2,
+        "catId" :[1],
+        "price": 
         {
-            "current":62990,
-            "discount":10,
-            "old" : 69989
+            "current":32880,
+            "discount":20,
+            "old" : 41100
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
-        "colors":[],
+        "description" : "Ekran: 14\" TN, Anti-glare Procesor: AMD 3020e, Dual Core Memorija: 4 GB DDR4, 2400 MHz Hard disk: 128 GB SSD, 2242 MHz Grafička karta: AMD Radeon Graphics, integrisanaOperativni sistem: FreeDOS",
+        "colors":["Black", "Gray", "White"],
         "sizes":[]
     },
     {
         "id" : "9",
-        "name" : "Prometheus",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "14ADA05",
+        "brandId" : 2,
+        "catId" :[1],
+        "price": 
         {
-            "current":99990,
-            "discount":10,
-            "old" : 111100
+            "current":36436,
+            "discount":20,
+            "old" : 45544
         },
         "stars" : 5,
         "isNew" : true,
-        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
-        "colors":[],
+        "description" : " Ekran: 14\" HD , TN, Anti-glare Procesor: AMD 3020e, Dual Core Grafička karta: Integrisana, AMD Radeon Graphics Memorija: 4 GB DDR4, 2400 MHz Hard disk: 64 GB SSD eMMC 5.1 Operativni sistem: Windows 10 Home",
+        "colors":["Gray"],
         "sizes":[]
     },
     {
         "id" : "10",
-        "name" : "IdeaCentre 510-15",
+        "name" : "81W10069YA",
         "brandId" : 2,
-        "catId" :[0],
-        "price":
+        "catId" :[1],
+        "price": 
         {
-            "current":62213,
+            "current": 44436,
             "discount":20,
-            "old" : 77767
-        },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
-        "colors":[],
-        "sizes":[]
-    },
-    {
-        "id" : "11",
-        "name" : "UX391FA-AH008R",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
-        {
-            "current":128435,
-            "discount":15,
-            "old" : 151100
-        },
-        "stars" : 4,
-        "isNew" : false,
-        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
-        "colors":["Black", "Gray", "White"],
-        "sizes":[]
-    },
-    {
-        "id" : "12",
-        "name" : "Zephyrus M GU502GV-A",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
-        {
-            "current":215990,
-            "discount":10,
-            "old" : 239989
-        },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
-        "colors":["Black", "Red"],
-        "sizes":[]
-    },
-    {
-        "id" : "13",
-        "name" : "81H300FVYA",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
-        {
-            "current":49990,
-            "discount":10,
             "old" : 55544
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
-        "colors":["Black"],
+        "description" : " Ekran: 15,6\" TN, Anti-Glare Procesor: AMD Ryzen 3 3250U Memorija: 8 GB DDR4 - 2400 MHz, 2 x 4 GB Hard disk: 256 GB SSD Grafička karta: AMD Radeon Graphics",
+        "colors":["Gray"],
         "sizes":[]
-    },
+    }, 
     {
-        "id" : "14",
-        "name" : "IdeaPad Gaming 3",
-        "brandId" : 2,
+        "id" : "11",
+        "name" : "GA401IU-HE092T",
+        "brandId" : 1,
         "catId" :[1],
-        "price":
+        "price": 
         {
-            "current":119990,
+            "current": 219990,
             "discount":10,
-            "old" : 133322
+            "old" : 244433
         },
         "stars" : 5,
-        "isNew" : false,
-        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
-        "colors":["Black"],
+        "isNew" : true,
+        "description" : "Ekran: 14\" IPS, Anti-Glare Procesor: AMD Ryzen 7 4800HS Memorija: 16 GB DDR4 - 3200 MHz Hard disk: 512 GB SSD Grafička karta: NVIDIA GeForce GTX 1660T Operativni sistem: Windows 10 Home",
+        "colors":["Black", "Gray"],
         "sizes":[]
-    },
+    }, 
     {
-        "id" : "15",
-        "name" : "Rocket II",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "id" : "12",
+        "name" : "7EA94EA",
+        "brandId" : 3,
+        "catId" :[1],
+        "price": 
         {
-            "current":62990,
+            "current": 165990,
             "discount":10,
-            "old" : 69989
+            "old" : 184433
+        },
+        "stars" : 5,
+        "isNew" : true,
+        "description" : "Ekran: 15,6\" Full HD Procesor: Intel Core i7 - 8750H Hexa Core Memorija: 8 GB DDR4 Hard disk: 512 GB SSD Grafička karta: Integrisana, Intel UHD Graphics 630 Operativni sistem: FreeDOS 2,0",
+        "colors":["Black", "Gray"],
+        "sizes":[] 
+    }, 
+    {
+        "id" : "13",
+        "name" : "MPXQ2ZE/A",
+        "brandId" : 9,
+        "catId" :[1],
+        "price": 
+        {
+            "current": 122768,
+            "discount":15,
+            "old" : 144433
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
-        "colors":[],
+        "description" : "Ekran: 13,3\" LED Procesor: Intel Core i5 Memorija: 8GB 2133MHz LPDDR3 Hard disk: 128 GB SSD Grafička karta: Intel Iris Plus Graphics 640 Operativni sistem: macOS Mojave",
+        "colors":["White"],
+        "sizes":[] 
+    }, 
+    {
+        "id" : "14",
+        "name" : "TIGER LIGHT",
+        "brandId" : 0,
+        "catId" :[0],
+        "price": 
+        {
+            "current": 69990,
+            "discount":10,
+            "old" : 77767
+        },
+        "stars" : 3,
+        "isNew" : false,
+        "description" : "Procesor: AMD Ryzen 7 PRO 4750G Matična ploča: Gigabyte B550M DS3H Memorija: 16 GB DDR4, 3200 MHz Hard disk: 240 GB SSD SATA3 Kućište: Falcon Cronos WLK-12",
+        "colors":["Black"],
+        "sizes":[]
+    }, 
+    {
+        "id" : "15",
+        "name" : "SAMURAI CM",
+        "brandId" : 0,
+        "catId" :[0],
+        "price": 
+        {
+            "current": 94990,
+            "discount":10,
+            "old" : 105544
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Procesor: AMD AM4 Ryzen 7 2700X, 3,7 GHz Memorija: 16 GB DDR4 - 2666 MHz Hard disk: 512 GB SSD M.2 NVMe Grafička karta: Radeon RX 580 Red Dragon V2 3DHD, 8 GB Kućište: Cooler Master MasterBox NR400, Glasfenster",
+        "colors":["Black"],
         "sizes":[]
     },
     {
         "id" : "16",
-        "name" : "Prometheus",
+        "name" : "SHINOBI",
         "brandId" : 0,
         "catId" :[0],
-        "price":
+        "price": 
         {
-            "current":99990,
+            "current": 73990,
             "discount":10,
-            "old" : 111100
+            "old" : 82211
         },
-        "stars" : 5,
+        "stars" : 4,
         "isNew" : true,
-        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
-        "colors":[],
+        "description" : "Procesor: AMD Ryzen 7 2700X Memorija: 8 GB DDR4 - 2666 MHz Hard disk: 240 GB SSD Matična ploča: Asus AM4 Prime B450M-A Grafička karta: GeForce GTX 1650 Zotac Gaming",
+        "colors":["Black"],
         "sizes":[]
     },
     {
         "id" : "17",
-        "name" : "IdeaCentre 510-15",
-        "brandId" : 2,
+        "name" : "HYPER PLUS",
+        "brandId" : 0,
         "catId" :[0],
-        "price":
+        "price": 
         {
-            "current":62213,
-            "discount":20,
-            "old" : 77767
+            "current": 41990,
+            "discount":10,
+            "old" : 46656
         },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
-        "colors":[],
+        "stars" : 3,
+        "isNew" : false,
+        "description" : "Procesor: AMD AM4 Ryzen 5 1600 Memorija: 8 GB DDR4 DIMM - 2666 MHz Hard disk: 240 GB SSD SATA3 Matična ploča: AM4 Prime A320M-K Kućište: Falcon Castor WLK-01",
+        "colors":["Black"],
         "sizes":[]
     },
     {
         "id" : "18",
-        "name" : "UX391FA-AH008R",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "name" : "BLACK PANTER",
+        "brandId" : 0,
+        "catId" :[0],
+        "price": 
         {
-            "current":128435,
+            "current": 70490,
             "discount":15,
-            "old" : 151100
+            "old" : 83322
         },
         "stars" : 4,
-        "isNew" : false,
-        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
-        "colors":["Black", "Gray", "White"],
+        "isNew" : true,
+        "description" : "Memorija: 16 GB DDR4 - 2666 MHz Hard disk: 240 GB SSD 2.5 SATA3 Procesor: AMD Ryzen 5 1600 Matična ploča: Asus AM4 Prime B450M-A Grafička karta: ASUS Dual Radeon RX 580 OC",
+        "colors":["Gray", "Black"],
         "sizes":[]
     },
     {
         "id" : "19",
-        "name" : "Zephyrus M GU502GV-A",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "name" : "ALTOS SELECT CT",
+        "brandId" : 0,
+        "catId" :[0],
+        "price": 
         {
-            "current":215990,
+            "current": 26990,
             "discount":10,
-            "old" : 239989
+            "old" : 29989
         },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
-        "colors":["Black", "Red"],
+        "stars" : 3,
+        "isNew" : false,
+        "description" : "Procesor: Intel Pentium Gold G5400 Matična ploča: Intel Prime H310M-K Memorija: 8 GB DDR4 - 2666 MHz Hard disk: 240 GB Napajanje: LG MAX FW302 560 W",
+        "colors":["Gray"],
         "sizes":[]
     },
     {
         "id" : "20",
-        "name" : "81H300FVYA",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "name" : "WINTER I",
+        "brandId" : 0,
+        "catId" :[0],
+        "price": 
         {
-            "current":49990,
+            "current": 79990,
             "discount":10,
-            "old" : 55544
+            "old" : 88878
         },
         "stars" : 4,
-        "isNew" : false,
-        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "isNew" : true,
+        "description" : "Desktop računar sa LGA1151 i5-9400F procesorom Grafika: RX 580 XFX 8 GB Matična ploča: LGA1151 B365M SSD disk: 500 GB RAM memorija: 8 GB DDR4 - 3200 MHz",
         "colors":["Black"],
         "sizes":[]
     },
     {
         "id" : "21",
-        "name" : "IdeaPad Gaming 3",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "name" : "P Smart 2021 ",
+        "brandId" : 10,
+        "catId" :[3],
+        "price": 
         {
-            "current":119990,
+            "current": 27990,
             "discount":10,
-            "old" : 133322
+            "old" : 31100
         },
         "stars" : 5,
-        "isNew" : false,
-        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
-        "colors":["Black"],
+        "isNew" : true,
+        "description" : "TFT LCD ekran dijagonale od 6,67\" IPS tehnologije Odlična četvorostruka kamera od 48 MP + 8 MP + 2 MP + 2 MP Snažna litijum-polimerska baterija nazivnog kapaciteta od 4900 mAh Poseduje Android 10 operativni sistem Interna memorija od 128 GB",
+        "colors":["Black", "Gray"],
         "sizes":[]
     },
     {
         "id" : "22",
-        "name" : "Rocket II",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "P30 LITE",
+        "brandId" : 10,
+        "catId" :[3],
+        "price": 
         {
-            "current":62990,
+            "current": 29990,
             "discount":10,
-            "old" : 69989
+            "old" : 33322
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
-        "colors":[],
+        "description" : "Ekran: 6.15\", 1080 x 2312 px Memorija: RAM: 4 GB/ ROM: 128 GBKamera: 48+8+2 MP / 24 MP Baterija: 3340mAh",
+        "colors":["White"],
         "sizes":[]
     },
     {
         "id" : "23",
-        "name" : "Prometheus",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "iPhone 11 Pro",
+        "brandId" : 9,
+        "catId" :[3],
+        "price": 
         {
-            "current":99990,
+            "current": 79990,
             "discount":10,
-            "old" : 111100
+            "old" : 88878
         },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
-        "colors":[],
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Ekran: 5,8\" Memorija: 64 GB Kamera: 12 MP + 12 MP + 12 MP / 12 MP Operativni sistem: iOS 13 Rezolucija: 2436 x 1125 px",
+        "colors":["Black"],
         "sizes":[]
     },
     {
         "id" : "24",
-        "name" : "IdeaCentre 510-15",
-        "brandId" : 2,
-        "catId" :[0],
-        "price":
+        "name" : "iPhone 12",
+        "brandId" : 9,
+        "catId" :[3],
+        "price": 
         {
-            "current":62213,
-            "discount":20,
-            "old" : 77767
+            "current": 123890,
+            "discount":10,
+            "old" : 137656
         },
         "stars" : 5,
         "isNew" : true,
-        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
-        "colors":[],
+        "description" : "Ekskluzivan telefon sa MagSafe i Qi bežičnim punjenjem Dvostruka glavna kamera od 12 MP impresivne rezolucije visokog kvaliteta Poseduje odličan iOS 14 operativni sistem Ekran od 6,1\" uglađenog dizajna Interna memorija od 64 GB",
+        "colors":["White"],
         "sizes":[]
     },
     {
         "id" : "25",
-        "name" : "UX391FA-AH008R",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "name" : "Galaxy S10+",
+        "brandId" : 11,
+        "catId" :[3],
+        "price": 
         {
-            "current":128435,
+            "current": 99989,
             "discount":15,
-            "old" : 151100
+            "old" : 84991
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
-        "colors":["Black", "Gray", "White"],
+        "description" : "Ekran: 6,4\" Memorija: RAM: 8 GB / ROM: 128 GB Kamera: 16 MP + 12 MP + 12 MP / 10 MP + 8 MP Operativni sistem: Android 9.0 Baterija: 4100 mAh",
+        "colors":["Black", "White"],
         "sizes":[]
     },
     {
         "id" : "26",
-        "name" : "Zephyrus M GU502GV-A",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "name" : "Galaxy Z Fold2",
+        "brandId" : 11,
+        "catId" :[3],
+        "price": 
         {
-            "current":215990,
+            "current": 244990,
             "discount":10,
-            "old" : 239989
+            "old" : 272211
         },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
-        "colors":["Black", "Red"],
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Fenomenalni telefon na preklop sa glavnim ekranom od 7,6\" i unutrašnjim od 6,2\" Poseduje višestruke kamere koje pružaju sjajne fotografije RAM memorija od 12 GB i interna memorija od 256 GB Snažan Octa Core procesor sa brzinom do 3 GHz",
+        "colors":["Black", "Gray"],
         "sizes":[]
     },
     {
         "id" : "27",
-        "name" : "81H300FVYA",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "name" : "Galaxy S20 FE",
+        "brandId" : 11,
+        "catId" :[3],
+        "price": 
         {
-            "current":49990,
+            "current": 79990,
             "discount":10,
-            "old" : 55544
+            "old" : 88878
         },
-        "stars" : 4,
-        "isNew" : false,
-        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
-        "colors":["Black"],
+        "stars" : 5,
+        "isNew" : true,
+        "description" : "Pametni telefon u beloj boji sa Super AMOLED ekranom Odličan Android operativni sistem pruža mnogo novih mogućnosti Poseduje sjajnu prednju kameru od 32 MP i displej veličine od 6,5\" 128 GB interna memorija, 6 GB RAM memorija",
+        "colors":["Black", "White"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "28",
-        "name" : "IdeaPad Gaming 3",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "name" : "Y6 2019",
+        "brandId" : 11,
+        "catId" :[3],
+        "price": 
         {
-            "current":119990,
+            "current": 15990,
             "discount":10,
-            "old" : 133322
+            "old" : 17767
         },
-        "stars" : 5,
+        "stars" : 4,
         "isNew" : false,
-        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
-        "colors":["Black"],
+        "description" : "Odličan smart telefon dijagonale ekrana od 6,1\" Koristi Android 9.0 operativni sistem 32 GB interna memorija i 2 GB RAM memorija Snažna baterija od 2920 mAh Posed je sjajan Quad Core procesor",
+        "colors":["Black", "Gray"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "29",
-        "name" : "Rocket II",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "Galaxy Z Flip",
+        "brandId" : 11,
+        "catId" :[3],
+        "price": 
         {
-            "current":62990,
+            "current": 129990,
             "discount":10,
-            "old" : 69989
+            "old" : 144433
         },
-        "stars" : 4,
+        "stars" : 5,
         "isNew" : false,
-        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
-        "colors":[],
+        "description" : "Infinity Flex ekran od 6,7\" Interna memorija od 256 GB Glavna dvostruka kamera od 12 MP + 12 MP sa optičkom stabilizacijom slike Octa Core procesor brzine 2,9 GHz Dvostruka baterija jačine 3300 mAh",
+        "colors":["Black", "Gray"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "30",
-        "name" : "Prometheus",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "iPhone XS Max",
+        "brandId" : 9,
+        "catId" :[3],
+        "price": 
         {
-            "current":99990,
+            "current": 162590,
             "discount":10,
-            "old" : 111100
+            "old" : 180656
         },
         "stars" : 5,
-        "isNew" : true,
-        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
-        "colors":[],
+        "isNew" : false,
+        "description" : "HD Super Retina ekran dijagonale od 6,5\" Zadnja kamera od 12 MP + 12 MP i prednja od 7 MP Hexa Core procesorska snaga Interna memorija od 64 GB Kapacitet baterije od 3174 mAh",
+        "colors":["Black", "Gray"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "31",
-        "name" : "IdeaCentre 510-15",
-        "brandId" : 2,
-        "catId" :[0],
-        "price":
+        "name" : "TUF Gaming K5",
+        "brandId" : 1,
+        "catId" :[2,5],
+        "price": 
         {
-            "current":62213,
-            "discount":20,
-            "old" : 77767
+            "current": 7490,
+            "discount":10,
+            "old" : 8322
         },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
-        "colors":[],
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Tastatura poseduje Aura Sync RGB osvjetljenje Žičano povezivanje putem USB-a Podržava Windows 7 i Windows 10 operativni sistem Posed je integrisani oslonac za ručni zglob",
+        "colors":["Black"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "32",
-        "name" : "UX391FA-AH008R",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "name" : "K400 PLUS",
+        "brandId" : 4,
+        "catId" :[2,5],
+        "price": 
         {
-            "current":128435,
-            "discount":15,
-            "old" : 151100
+            "current": 4799,
+            "discount":10,
+            "old" : 5332
         },
-        "stars" : 4,
+        "stars" : 3,
         "isNew" : false,
-        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
-        "colors":["Black", "Gray", "White"],
+        "description" : "Povezivanje: Bežično Dimenzije: 35.43 x 14 x 2.35 cm Boja: Crna Specijalni tasteri Napajanje: 2 x AA Bežični domet: 10 m",
+        "colors":["Black"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "33",
-        "name" : "Zephyrus M GU502GV-A",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "name" : "G512",
+        "brandId" : 4,
+        "catId" :[2,5],
+        "price": 
         {
-            "current":215990,
+            "current": 15790,
             "discount":10,
-            "old" : 239989
+            "old" : 17544
         },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
-        "colors":["Black", "Red"],
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Bežična gejmerska tastatura sa aluminijumskim kućištem Mogućnost programiranja osvetljenja pomoću LIGHTSYNC RGB Kompatabilna sa Windows sistemom Dodatni USB port",
+        "colors":["Black", "Gray"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "34",
-        "name" : "81H300FVYA",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "name" : "G815 Linear",
+        "brandId" : 4,
+        "catId" :[2,5],
+        "price": 
         {
-            "current":49990,
-            "discount":10,
-            "old" : 55544
+            "current": 19990,
+            "discount":28,
+            "old" : 27767
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
+        "description" : "Žičana gejmerska tastatura vodootpornog dizajna Poseduje mehaničke tastere Opremljena RGB osvetljenjem sa LightSync tehnologijom Programiranje tastera preko Logitech G Hub softvera za koji je potreban internet pristup",
         "colors":["Black"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "35",
-        "name" : "IdeaPad Gaming 3",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "name" : "K270",
+        "brandId" : 4,
+        "catId" :[2,5],
+        "price": 
         {
-            "current":119990,
+            "current": 4190,
             "discount":10,
-            "old" : 133322
+            "old" : 4656
         },
-        "stars" : 5,
+        "stars" : 3,
         "isNew" : false,
-        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
-        "colors":["Black"],
+        "description" : "Povezivanje: Bežično Dimenzije: 441 x 18 x 149 mm Boja: Crna Domet: Do 10 metara 8 brzih tastera",
+        "colors":["Black", "Gray"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "36",
-        "name" : "Rocket II",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "K502RGB",
+        "brandId" : 5,
+        "catId" :[2,5],
+        "price": 
         {
-            "current":62990,
+            "current": 3690,
             "discount":10,
-            "old" : 69989
+            "old" : 4100
         },
         "stars" : 4,
-        "isNew" : false,
-        "description":"Gaming računar sa GeForce GTX 1650 grafičkom kartom, Poseduje snažan AMD procesor Ryzen 5, RAM memorija od 8 GB, SSD disk SATA3 od 256 GB, Napajanje od 400 W W",
-        "colors":[],
+        "isNew" : true,
+        "description" : "Tip: Gejmerska vodootporna tastatura Povezivanje: USB Raspored slova: US Tip tastera: Membranski Broj tastera: 10",
+        "colors":["Gray"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "37",
-        "name" : "Prometheus",
-        "brandId" : 0,
-        "catId" :[0],
-        "price":
+        "name" : "NX 7005",
+        "brandId" : 6,
+        "catId" :[2,6],
+        "price": 
         {
-            "current":99990,
+            "current": 1090,
             "discount":10,
-            "old" : 111100
+            "old" : 1211
         },
-        "stars" : 5,
-        "isNew" : true,
-        "description":"Moćna gaming mašina sa AMD RX 580 grafičkom kartom, Veliki kapacitet RAM memorije od 32 GB, Napajanje od 500 W, SSD disk SATA3 od 512 GB, Matična ploča B450M",
-        "colors":[],
+        "stars" : 3,
+        "isNew" : false,
+        "description" : "Senzor: Optički Rezolucija: 1200 dpi Povezivanje:Bežično, USB Boja: Crna Broj tastera: 3",
+        "colors":["Black"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "38",
-        "name" : "IdeaCentre 510-15",
-        "brandId" : 2,
-        "catId" :[0],
-        "price":
+        "name" : "DEATHTAKER",
+        "brandId" : 6,
+        "catId" :[2,6],
+        "price": 
         {
-            "current":62213,
-            "discount":20,
-            "old" : 77767
+            "current": 4024,
+            "discount":10,
+            "old" : 4471
         },
         "stars" : 5,
         "isNew" : true,
-        "description":"Desktop računar koristi Intel Core i3 procesor, Brzina procesora iznosi 3,6 GHz, Hard disk sa SSD memorijom od 240 GB, Poseduje DDR4 memoriju kapaciteta 8 GB, Grafička kartica: nVidia GTX 1050 2 GB",
-        "colors":[],
+        "description" : "Senzor: Laser Rezolucija: 5700dpi Odziv: 1ms/1000Hz Broj tastera: 9 Boja: Crna",
+        "colors":["Black"],
         "sizes":[]
-    },
+    }, 
     {
         "id" : "39",
-        "name" : "UX391FA-AH008R",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "name" : "CENTROPHORUS",
+        "brandId" : 5,
+        "catId" :[2,6],
+        "price": 
         {
-            "current":128435,
-            "discount":15,
-            "old" : 151100
+            "current": 1590,
+            "discount":10,
+            "old" : 1767
+        },
+        "stars" : 5,
+        "isNew" : false,
+        "description" : "Senzor: Optički Rezolucija: 2000 dpi Povezivanje: Žično, USB Boja: Crna Broj tastera: 6",
+        "colors":["Black"],
+        "sizes":[]
+    }, 
+    {
+        "id" : "40",
+        "name" : "TUF Gaming M5",
+        "brandId" : 1,
+        "catId" :[2,6],
+        "price": 
+        {
+            "current": 3990,
+            "discount":10,
+            "old" : 4433
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Ekran: 13.3\", Procesor: Intel Core i5-8265U, Memorija: 8 GB DDR3, Hard disk: 256 GB SSD, Grafička karta: Intel UHD Graphics 620, Operativni sistem: Windows 10 Professional",
-        "colors":["Black", "Gray", "White"],
+        "description" : "Optički gejmerski miš Podržani operativni sistemi Windows 10 i Windows 7 Rezolucija od 6200 dpi USB povezivanje Težina od 110 g",
+        "colors":["Gray"],
         "sizes":[]
-    },
+    }, 
     {
-        "id" : "40",
-        "name" : "Zephyrus M GU502GV-A",
-        "brandId" : 1,
-        "catId" :[1],
-        "price":
+        "id" : "41",
+        "name" : "M602-1",
+        "brandId" : 5,
+        "catId" :[2,6],
+        "price": 
         {
-            "current":215990,
+            "current": 1599,
             "discount":10,
-            "old" : 239989
+            "old" : 1777
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Senzor: Optički Rezolucija: 7200 dpi Povezivanje: Žično, USB Boja: Crna Broj tastera: 8",
+        "colors":["Black"],
+        "sizes":[]
+    }, 
+    {
+        "id" : "42",
+        "name" : "TAPH802",
+        "brandId" : 8,
+        "catId" :[2,4],
+        "price": 
+        {
+            "current": 13999,
+            "discount":10,
+            "old" : 15554
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Bežične slušalice koje emituju zvuk visoke rezolucije Ugrađeni mikrofon otklanja buku Jednostavna kontrola i upravljanje pozivima i muzikom Poseduju impedansu od 16 Ω",
+        "colors":["Black"],
+        "sizes":[]
+    }, 
+    {
+        "id" : "43",
+        "name" : "Bežične bubice TAT2205BK/00",
+        "brandId" : 8,
+        "catId" :[2,4],
+        "price": 
+        {
+            "current": 7999,
+            "discount":10,
+            "old" : 8888
+        },
+        "stars" : 4,
+        "isNew" : false,
+        "description" : "Bežične slušalice u crnoj boji Povezivanje putem bluetooth konekcije Brzo i jednostavno obavljanje poziva Moćna litijum-jonska baterija za 50 50 h u standby-u Kompaktan dizajn sa zvučnicima od 6 mm",
+        "colors":[],
+        "sizes":[]
+    }, 
+    {
+        "id" : "44",
+        "name" : "WF1000XM3",
+        "brandId" : 7,
+        "catId" :[2,4],
+        "price": 
+        {
+            "current": 37990,
+            "discount":10,
+            "old" : 42211
         },
         "stars" : 5,
         "isNew" : true,
-        "description":"15,6\" IPS Anti-Glare, Procesor: Intel Core i7-9750H, Memorija: 16 GB, Hard disk: 512 GB M.2 SSD PCIE NVME, Grafička karta: NVIDIA GeForce RTX 2060, Operativni sistem: Windows 10",
-        "colors":["Black", "Red"],
+        "description" : "Dinamičke slušalice zatvorenog tipa Ergonomska struktura sa tri hvata za sigurno prianjanje Mogućnost upravljanja pomoću glasovnog asistenata Poseduju HD procesor za potiskivanje buke QN1e",
+        "colors":[],
         "sizes":[]
-    },
+    }, 
     {
-        "id" : "41",
-        "name" : "81H300FVYA",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "id" : "45",
+        "name" : "WHCH710N",
+        "brandId" : 7,
+        "catId" :[2,4],
+        "price": 
         {
-            "current":49990,
+            "current": 19990,
             "discount":10,
-            "old" : 55544
+            "old" : 22211
+        },
+        "stars" : 4,
+        "isNew" : true,
+        "description" : "Elegantn zaobljen dizajn sa funkcijom potiskivanja buke 35 sati bežične reprodukcije Domet slušalica do 10 m Kompatibilnost sa pametnim telefonima Frekventni opseg od 20 Hz do 20 kHz",
+        "colors":["Black", "Gray"],
+        "sizes":[]
+    }, 
+    {
+        "id" : "46",
+        "name" : "Bežične slušalice WIC200",
+        "brandId" : 7,
+        "catId" :[2,4],
+        "price": 
+        {
+            "current": 4499,
+            "discount":10,
+            "old" : 4999
         },
         "stars" : 4,
         "isNew" : false,
-        "description":"Ekran: 10,1\" IPS Anti-glare, Procesor: Intel Pentium Silver N5000, Memorija: 4 GB LPDDR4 - 2133 MHz, Hard disk: 128 GB eMMC, Grafička karta: Intel UHD Graphics 605, Operativni sistem: Windows 10 Pro 64",
-        "colors":["Black"],
+        "description" : "Tip: Bežične slušalice Povezivanje: Bluetooth Boja: Bela Vreme punjenja baterije: oko 3 h Vreme trajanja baterije: maksimalno 15 h",
+        "colors":["White", "Gray"],
         "sizes":[]
-    },
+    }, 
     {
-        "id" : "42",
-        "name" : "IdeaPad Gaming 3",
-        "brandId" : 2,
-        "catId" :[1],
-        "price":
+        "id" : "47",
+        "name" : "MDR-ZX310APW",
+        "brandId" : 7,
+        "catId" :[2,4],
+        "price": 
         {
-            "current":119990,
+            "current": 3599,
             "discount":10,
-            "old" : 133322
+            "old" : 3999
         },
-        "stars" : 5,
+        "stars" : 4,
         "isNew" : false,
-        "description":"Ekran: 15,6\" FHD Anti-Glare, Procesor: Intel Core i5-10300H, Quad Core, Memorija: 16 GB DDR4 - 2933 MHz,  Hard disk: 256 SSD + 1 TB HDD, Grafička karta: NVIDIA GeForce GTX 1650 Ti",
-        "colors":["Black"],
+        "description" : "Povezivanje:Žično Frekventni opseg: 10–24.000 Hz Boja: Bela Dužina kabla: 1.2m Kapacitet: 1000 mW",
+        "colors":["White", "Black"],
         "sizes":[]
     }
 ]

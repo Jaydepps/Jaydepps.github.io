@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("header").next().css("margin-top", parseInt($("header").height()))
-	var categories, brands, products, filteredProducts, filterSearch = "", filterCategories = [], filterBrand = null, filterPrice = [1, 1000000], sortType = 0, showNumber = 10, currentPage = 1, slickIndex = 1;
+	var categories, brands, products, filteredProducts, filterSearch = "", filterCategories = [], filterBrand = null, filterPrice = [1, 1000000], sortType = 0, showNumber = 20, currentPage = 1, slickIndex = 1;
 	ajaxGet("categories", "json", populateCategories);
 	ajaxGet("brands", "json", populateBrands);
 	ajaxGet("products", "json", loadProducts);
@@ -163,18 +163,24 @@ $(document).ready(function(){
 		pagination()
 	})
 
-	$(document).on("click", ".open-product", function(){
+	$(document).on("mouseup", ".open-product", function(){
 		localStorage.setItem("product-id", $(this).attr("data-id"))
 	})
-	$("#cart-dropdown").on("click", ".open-product", function(){
+	$("#cart-dropdown").on("mouseup", ".open-product", function(){
 		localStorage.setItem("product-id", $(this).attr("data-id"))
 	})
 
 	if(window.location.pathname.indexOf("store.html") !== -1){
 		if(window.location.search)
 			storeRedirect();
-		if(localStorage.getItem("sort"))
-			$("#sort-by").val(localStorage.getItem("sort"))
+		if(localStorage.getItem("sort")){
+			sortType = localStorage.getItem("sort")
+			$("#sort-by").val(sortType)
+		}
+		if(localStorage.getItem("showing")){
+			showNumber = localStorage.getItem("showing")
+			$("#number-products").val(showNumber)
+		}
 		$(window).on("resize", function(){
 			if(!$("#aside").is(":visible") && window.innerWidth > 992){
 				$("#aside").show()
@@ -221,7 +227,10 @@ $(document).ready(function(){
 			}
 		}
 		else{
-			var cart = [{"id": id, "qty": 1}]
+			if($(this).parent().find("#add-qty").length)
+				var cart = [{"id": id, "qty": parseInt($("#add-qty").val())}]
+			else
+				var cart = [{"id": id, "qty": 1}]
 			setCookie("cart", JSON.stringify(cart), 7);
 			cartUpdate();
 		}
@@ -308,6 +317,7 @@ $(document).ready(function(){
 							</div>
 							<button data-id="${product.id}" class="delete"><i class="fa fa-close"></i></button>
 						</div>`
+				console.log(html)
 			}
 			html += `</div>
 					<div id="cart-summary">
@@ -419,7 +429,7 @@ $(document).ready(function(){
 	function loadProducts(data){
 		products = data;
 		setTimeout(() => {
-			populateProducts(data);
+			modifyProducts(data);
 		}, 100);
 		cartUpdate();
 	}
@@ -568,6 +578,7 @@ $(document).ready(function(){
 		var html = `<div class="section-title text-center">
 						<h3 class="title">Related Products</h3>
 					</div>
+					<div id="slick-nav-5" class="products-slick-nav"></div>
 					<div class="products-slick" data-nav="#slick-nav-5">`;
 		var catId = product.catId[product.catId.length-1];
 		var i = 0;
@@ -598,8 +609,7 @@ $(document).ready(function(){
 						</div>`
 			}
 		}
-		html += `</div>
-				<div id="slick-nav-5" class="products-slick-nav"></div>`
+		html += `</div>`
 		return html;
 	}
 
@@ -607,7 +617,8 @@ $(document).ready(function(){
 		var html = "";
 		
 		$(`a[href="${div.substring(0, div.indexOf("-tabs"))}"]`).each(function(){
-			html += `<div class="products-slick" data-nav="#slick-nav-${slickIndex}" data-tab="${$(this).attr("data-cat")}">`
+			html += `<div id="slick-nav-${slickIndex}" class="products-slick-nav"></div>
+					<div class="products-slick" data-nav="#slick-nav-${slickIndex}" data-tab="${$(this).attr("data-cat")}">`
 			for(prod of products){
 				if(prod.catId.includes(parseInt($(this).attr("data-cat")))){
 					html += `<div class="mw-100 mw-md-47 mw-xl-31 mx-2">
@@ -635,8 +646,7 @@ $(document).ready(function(){
 							</div>`
 				}
 			}
-			html += `</div>
-						<div id="slick-nav-${slickIndex}" class="products-slick-nav"></div>`
+			html += `</div>`
 			slickIndex++;
 		})
 		$(div).html(html)
@@ -753,6 +763,7 @@ $(document).ready(function(){
 	}
 	function showChange(){
 		showNumber = $("#number-products").val()
+		localStorage.setItem("showing", $("#number-products").val())
 		currentPage = 1;
 		showing();
 		modifyProducts()
@@ -804,7 +815,7 @@ $(document).ready(function(){
 		}
 		if(filterBrand != null){
 			filteredProducts = filteredProducts.filter(function(el){
-				return filterBrand.includes(el.brandId);
+				return el.brandId == filterBrand;
 			})
 		}
 		if(sortType == 1){
@@ -863,15 +874,15 @@ $(document).ready(function(){
 			i = currentPage - 2
 		var j = 2 + parseInt(currentPage);
 		if(i > 1)
-			html += `<li><a data-page="1" href="#store"><span class="fa fa-angle-double-left"></span></a></li>`
+			html += `<li><a data-page="1" href="#breadcrumb"><span class="fa fa-angle-double-left"></span></a></li>`
 		for(; i <= number && i <=j; i++){
 			if(i == currentPage)
-				html += `<li class="active"><a data-page="${i}" href="#store">${i}</a></li>`
+				html += `<li class="active"><a data-page="${i}" href="#breadcrumb">${i}</a></li>`
 			else
-				html += `<li><a data-page="${i}" href="#store">${i}</a></li>`
+				html += `<li><a data-page="${i}" href="#breadcrumb">${i}</a></li>`
 		}
 		if(i < number)
-			html += `<li><a data-page="${number}" href="#store"><span class="fa fa-angle-double-right"></span></a></li>`
+			html += `<li><a data-page="${number}" href="#breadcrumb"><span class="fa fa-angle-double-right"></span></a></li>`
 		$(".store-pagination").html(html);
 	}
 
