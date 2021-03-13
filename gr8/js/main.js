@@ -1058,14 +1058,39 @@ $(document).ready(function(){
 		})
 	});
 
-	// var priceInputMax = document.getElementById('price-max'),
-	// 	priceInputMin = document.getElementById('price-min');
-
-	// priceInputMax.addEventListener('change', function(){
-	// 	updatePrice($(this).parent() , this.value)
-	// });
-
-	// priceInputMin.addEventListener('change', function(){
-	// 	updatePrice($(this).parent() , this.value)
-	// });
+	$(".newsletter-btn").on("click", function(){
+		console.log("in")
+		console.log($("#emailnews").val())
+		let good = emailCheck($("#emailnews"))
+		console.log(good)
+		if(good){
+			$(`label[for="emailnews"`).html(``);
+			$("#emailnews").val("");
+			$("body").append(`	<div class="modal fade" id="emailSubmitted" tabindex="-1" aria-labelledby="emailSubmitted" aria-hidden="true">
+									<div class="modal-dialog modal-lg modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title" id="exampleModalLabel">Email submitted!</h4>
+											</div>
+											<div class="modal-body d-flex flex-column">
+												<p>Your email has been submitted and has been added to our mailing list.</p>
+												<ul class="d-flex h5 align-self-end pe-3">
+													<li>Share:</li>
+													<li class="ms-2"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+													<li class="ms-2"><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+													<li class="ms-2"><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+												</ul>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="primary-btn" data-bs-dismiss="modal">Ok</button>
+											</div>
+										</div>
+									</div>
+								</div>`)
+			$("#emailSubmitted").modal("toggle");
+		}
+		else{
+			$(`label[for="emailnews"`).html(`<h6 class='text-danger h6'>Invalid email. Example: anEmail@service.com</h6>`);
+		}
+	})
 })
